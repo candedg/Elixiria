@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elixiria | Home</title>
+    <!-- LINKS BOOTSTRAP-->
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- LINKS GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--LINKS CSS-->
+    <link rel="stylesheet" href="css/estilos-principal.css">
 </head>
-<body>
-    
+<body class="fondo-color-ppal columna textura">
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="contenedor-pricipal container-fluid p-0">
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-0">
+                <div class="container-fluid d-flex flex-row-reverse fondo-color-secundario">
+                    <a class="navbar-brand logo d-flex align-items-center py-2 m-0" href="index.html">
+                        <img src="img/elementos/logo.png" alt="logo de elixiria">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle subtitulo" data-bs-toggle="dropdown" href="index.html" role="button" aria-expanded="false">Menú</a>
+                                <ul class="dropdown-menu  fondo-color-secundario">
+                                    <li ><a class="dropdown-item texto-resaltado" href="./plantas/index.html">Plantas Medicinales</a></li>
+                                    <li><a class="dropdown-item texto-resaltado" href="./cristales/index.html">Cristales Energéticos</a></li>
+                                    <li><a class="dropdown-item texto-resaltado" href="./recetas/index.html">Recetas de Cocina Mágica</a></li>
+                                    <li><a class="dropdown-item texto-resaltado" href="historia.html">Historia</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link subtitulo" href="tienda.html">Comprar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link subtitulo" href="juego.html">Jugar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+            
+        <main>
+            
+        </main>
+        <footer>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom p-0">
+                <div class="container-fluid d-flex fondo-color-secundario">
+                    <a class="navbar-brand logo-footer d-flex align-items-center py-2" href="index.html">
+                        <img src="img/elementos/logo.png" alt="logo de elixiria">
+                    </a>
+                    <ul class="navbar-nav d-flex flex-row">
+                        <li class="nav-item pe-1">
+                            <a class="nav-link texto-resaltado" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item ps-1">
+                            <a class="nav-link texto-resaltado" href="alumna.html">Estudiante</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous">
+    </script>
 </body>
 </html>

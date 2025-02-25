@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* ESTILOS MODIFICADOS DE BOOTSTRAP */
+.navbar-toggler{
+    border: none;
+    color: transparent;
+}
+
+.navbar-toggler-icon{
+    background-image: url(../img/elementos/burger-menu.png);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #ccb47fb0;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #CCB47F ;
+}
+
+/* ESTILOS DE TODA LA WEB */
+.titulo{
+    font-family: "Mirza", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    color: #CCB47F;
+}
+
+.subtitulo{
+    font-family: "Mirza", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #CCB47F;
+}
+
+.texto-contenido{
+    font-family: "Mitr", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #CCB47F;
+}
+
+.texto-resaltado{
+    font-family: "Mitr", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    color: #CCB47F;
+}
+
+.texto-boton{
+    font-family: "Mitr", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    color: #CCB47F;
+}
+
+.fondo-color-ppal{
+    background-color: #383B40;
+}
+
+.fondo-color-secundario{
+    background: #2B2728;
+}
+
+.fondo-color-acento{
+    background: #CCB47F;
+}
+
+.color-secundario{
+    color: #2B2728;
+}
+
+.color-acento{
+    color: #CCB47F;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textura{
+    background-image: url(../img/elementos/fondo-textura.png);
+}
+
+
+/* HEADER */
+.logo img{
+    height: 45px;
+}
+
+/* FOOTER */
+.logo-footer img{
+    height: 25px;
+}
+
+
+
+@media (min-width: 992px) {
+    .logo img{
+        height: 55px;
+        margin: 1rem;
+    }
+    .titulo{
+        font-size: 1.6rem;
+    }
+}
