@@ -16,20 +16,23 @@
 </head>
 <body class="fondo-color-ppal columna textura">
     <!-- CONTENEDOR PRINCIPAL -->
-    <div class="contenedor-pricipal container-fluid p-0">
+    <div class="contenedor-pricipal container-fluid p-0 columna">
         <!-- HEADER -->
         <header>
+            <!-- NAVEGACIÓN -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-0">
                 <div class="container-fluid d-flex flex-row-reverse fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo d-flex align-items-center py-2 m-0" href="index.html">
                         <img src="img/elementos/logo.png" alt="logo de elixiria">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- MENU DESPLEGABLE  -->
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ">
-                            <li class="nav-item dropdown ">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle subtitulo" data-bs-toggle="dropdown" href="index.html" role="button" aria-expanded="false">Menú</a>
                                 <ul class="dropdown-menu  fondo-color-secundario">
                                     <li ><a class="dropdown-item texto-resaltado" href="./plantas/index.html">Plantas Medicinales</a></li>
@@ -48,18 +51,90 @@
                     </div>
                 </div>
             </nav>
-        </header>
-
-            
-        <main>
-            
+        </header>            
+        <!-- SECCIONES INFO -->
+        <main class="col-12 col-lg-9">
+            <!-- BIENVENIDA -->
+            <section class="fondo-oscuro-difuminado mt-lg-5 pt-lg-3">
+                <h2 class="titulo pt-5 mt-4 text-center">¡Te damos la bienvenida!</h2>
+                <p class="texto-contenido mx-3 my-0 pb-4 text-center">Elixiria es un espacio donde la naturaleza y la armonía se encuentran. Aquí descubrirás el poder de las plantas medicinales, la energía de los cristales y recetas prácticas que integran estos conocimientos en tu vida diaria. Explora nuestra tienda de artículos naturales y participa en nuestro juego para obtener descuentos exclusivos. Conéctate con la sabiduría ancestral y encuentra inspiración para equilibrar cuerpo, mente y espíritu. ¡Empieza tu recorrido hoy!</p>
+            </section>
+            <!-- A PLANTAS -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center mb-4 flex-lg-row p-lg-4 tarjeta">
+                <img src="img/portadas/portada-seccion-plantas-horizontal.jpg" alt="mezcla de hierbas deshidratadas" class="portada-horizontal">
+                <img src="img/portadas/portada-plantas-cuadrada.jpg" alt="mezcla de hierbas deshidratadas" class="portada-circular blur">
+                <div class="d-flex flex-column align-items-lg-start blur">   
+                    <h3 class="titulo-oscuro text-center px-lg-4">Plantas Medicinales</h3>
+                    <p class="tx-contenido-oscuro px-4 pe-lg-0 mb-lg-0">Las plantas han sido utilizadas desde tiempos ancestrales por sus propiedades curativas y beneficios para el bienestar. En esta sección, encontrarás información detallada sobre hierbas y flores con usos medicinales, desde aquellas que ayudan a calmar la mente y reducir el estrés hasta las que fortalecen el sistema inmunológico y mejoran la salud física. Explora sus propiedades y descubre los diversos usos que han tenido a lo largo del tiempo en distintas prácticas de sanación y bienestar. </p>
+                </div>
+                <button id="boton-home" class="texto-boton text-center mb-4 py-2 px-3 w-auto fondo-color-secundario"><a href="plantas/index.html">VER</a></button>
+                <a href="plantas/index.html" class="overlay"><p>¡Click para ver más!</p></a>
+            </section>
+            <!-- A CRISTALES -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center mb-4 flex-lg-row p-lg-4 tarjeta">
+                <img src="img/portadas/portada-cristales-horizontal.jpg" alt="cristales de colores" class="portada-horizontal">
+                <div class="d-flex flex-column align-items-lg-end blur">
+                    <h3 class="titulo-oscuro text-center px-lg-4">Cristales Energéticos</h3>
+                    <p class="tx-contenido-oscuro px-4 text-lg-end ps-lg-0 mb-lg-0">Los cristales han sido valorados por su belleza y energía desde tiempos antiguos, utilizados en distintas tradiciones para armonizar cuerpo, mente y espíritu. En esta sección, encontrarás información sobre sus propiedades y significados, así como los usos que se les ha dado en prácticas de sanación, meditación y equilibrio emocional. Descubre cómo cada cristal puede aportar bienestar y conectar con distintas energías según sus características únicas.</p>
+                </div>
+                <img src="img/portadas/portada-cristales-cuadrada.jpg" alt="cristales de colores" class="portada-circular blur">
+                <button id="boton-home" class="texto-boton text-center mb-4 py-2 px-3 w-auto fondo-color-secundario"><a href="cristales/index.html">VER</a></button>
+                <a href="cristales/index.html" class="overlay"><p>¡Click para ver más!</p></a>
+            </section>
+            <!-- A RECETAS -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center mb-4 flex-lg-row p-lg-4 tarjeta">
+                <img src="img/portadas/portada-recetas-horizontal.jpg" alt="te de manzanilla en taza de vidrio" class="portada-horizontal">
+                <img src="img/portadas/portada-recetas-cuadrada.jpg" alt="té de manzanilla en taza de vidrio" class="portada-circular blur">
+                <div class="d-flex flex-column align-items-lg-start blur">
+                    <h3 class="titulo-oscuro text-center px-lg-4">Recetas de Cocina</h3>
+                    <p class="tx-contenido-oscuro px-4 pe-lg-0 mb-lg-0 ">En esta sección, encontrarás recetas simples y prácticas para incorporar hierbas y flores con propiedades energéticas y medicinales en tu día a día de manera deliciosa y beneficiosa. Desde infusiones relajantes hasta platos nutritivos, cada receta está pensada para aprovechar las propiedades naturales de los ingredientes y aportar bienestar a tu rutina. Descubre nuevas formas de disfrutar los sabores y beneficios de la naturaleza en cada preparación.</p>
+                </div>
+                <button id="boton-home" class="texto-boton text-center mb-4 py-2 px-3 w-auto fondo-color-secundario"><a href="recetas/index.html">VER</a></button>
+                <a href="recetas/index.html" class="overlay"><p>¡Click para ver más!</p></a>
+            </section>
+            <!-- A HISTORIA -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center mb-4 flex-lg-row p-lg-4 tarjeta">
+                <img src="img/portadas/portada-historia-horizontal.jpg" alt="biblioteca con libros" class="portada-horizontal">
+                <div class="d-flex flex-column align-items-lg-end blur">
+                    <h3 class="titulo-oscuro text-center px-lg-4">Historia</h3>
+                    <p class="tx-contenido-oscuro px-4 text-lg-end ps-lg-0 mb-lg-0">A lo largo de la historia, diversas culturas han recurrido a la medicina natural y a las propiedades espirituales de los elementos de la naturaleza para sanar el cuerpo y el alma. Desde la herbolaria ancestral de civilizaciones como la egipcia y la china, hasta las tradiciones chamánicas de los pueblos indígenas, el conocimiento sobre plantas, cristales y otros elementos ha sido transmitido de generación en generación. Esta sabiduría, basada en la observación y la experiencia, sigue siendo una fuente de equilibrio y bienestar en la actualidad.</p>
+                </div>
+                <img src="img/portadas/portada-historia-cuadrada.jpg" alt="biblioteca con libros" class="portada-circular blur">
+                <button id="boton-home" class="texto-boton text-center mb-4 py-2 px-3 w-auto fondo-color-secundario"><a href="historia.html">VER</a></button>
+                <a href="historia.html" class="overlay"><p>¡Click para ver más!</p></a>
+            </section>
+            <!-- A LA TIENDA -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center mb-4 flex-lg-row p-lg-4 tarjeta">
+                <img src="img/portadas/portada-horizontal-tienda.jpg" alt="bolsa marron de papel" class="portada-horizontal">
+                <img src="img/portadas/portada-tienda-cuadrada.jpg" alt="bolsa marron de papel" class="portada-circular blur">
+                <div class="d-flex flex-column align-items-lg-start blur">
+                    <h3 class="titulo-oscuro text-center px-lg-4">Tienda</h3>
+                    <p class="tx-contenido-oscuro px-4 pe-lg-0 mb-lg-0">En nuestra tienda online encontrarás una selección de productos naturales cuidadosamente elegidos para acompañarte en tu camino hacia el bienestar. Cada artículo está pensado para complementar tu vida de forma armoniosa. Ya sea que busques herramientas para el cuidado personal, elementos espirituales o ingredientes naturales para tus recetas, aquí podrás descubrir opciones de calidad que se alinean con un estilo de vida consciente y equilibrado.</p>
+                </div>
+                <button id="boton-home" class="texto-boton text-center mb-4 py-2 px-3 w-auto fondo-color-secundario"><a href="tienda.html">Ir a la tienda</a></button>
+                <a href="tienda.html" class="overlay"><p>¡Click para ir a la tienda!</p></a>
+            </section>
+            <!-- AL JUEGO -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center mb-5 flex-lg-row p-lg-4 tarjeta">
+                <img src="img/portadas/elementor-placeholder-image.jpg" alt="" class="portada-horizontal">
+                <div class="d-flex flex-column align-items-lg-end blur">
+                    <h3 class="titulo-oscuro text-center px-lg-4">¡Juega por descuentos!</h3>
+                    <p class="tx-contenido-oscuro px-4 text-lg-end ps-lg-0 mb-lg-0">Pon a prueba tus conocimientos y deja que la suerte te guíe en nuestro divertido juego interactivo. Lanza el dado, responde preguntas sobre hierbas, cristales y sus propiedades, y gana descuentos exclusivos para nuestra tienda. Una forma entretenida y educativa de conectar con el mundo natural mientras obtienes beneficios para tus compras. ¡Juega, aprende y gana!</p>
+                </div>
+                <img src="img/portadas/portada-juego-cuadrada.jpg" alt="" class="portada-circular blur">
+                <button id="boton-home" class="texto-boton text-center mb-4 py-2 px-3 w-auto fondo-color-secundario"><a href="tienda.html">Jugar</a></button>
+                <a href="juego.html" class="overlay"><p>¡Click para jugar!</p></a>
+            </section>
         </main>
+        <!-- FOOTER -->
         <footer>
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom p-0">
                 <div class="container-fluid d-flex fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo-footer d-flex align-items-center py-2" href="index.html">
                         <img src="img/elementos/logo.png" alt="logo de elixiria">
                     </a>
+                    <!-- PAGINAS COMPLEMENTARIAS -->
                     <ul class="navbar-nav d-flex flex-row">
                         <li class="nav-item pe-1">
                             <a class="nav-link texto-resaltado" href="contacto.html">Contacto</a>
@@ -73,6 +148,7 @@
         </footer>
 
     </div>
+    <!-- LINK A BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous">
