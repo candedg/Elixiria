@@ -20,6 +20,19 @@
 .nav-link:focus, .nav-link:hover {
     color: #CCB47F ;
 }
+.accordion-button{
+    background-color:#ccb47f75;
+    backdrop-filter: blur(4px);
+}
+
+.accordion-item{
+    background-color: #2b272800 !important;
+    border: none;
+}
+
+.accordion-button::after {
+    margin-left: 0;
+}
 
 /* ESTILOS DE TODA LA WEB */
 .titulo{
@@ -48,7 +61,7 @@
 
 .texto-contenido{
     font-family: "Mitr", serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-size: 1rem;
     color: #CCB47F;
@@ -74,7 +87,7 @@
     font-family: "Mitr", serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #CCB47F;
 }
 
@@ -133,6 +146,10 @@ a{
 .logo img{
     height: 45px;
 }
+nav{
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+
+}
 
 /* FOOTER */
 .logo-footer img{
@@ -158,7 +175,7 @@ a{
  #boton-home {
     border-radius: 5px;
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.50);
-    border: #CCB47F 1px;
+    border: 1px solid #CCB47F;
     cursor: pointer;
     animation: pulse 1.5s infinite;
 }
@@ -202,8 +219,19 @@ a{
     position: absolute;
 
 }
+ 
+/*  PLANTAS */
+.boton-nav {
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 0px #0000006f;
+    border: 1px solid #CCB47F;
+    cursor: pointer;
+}
 
-
+/* HIERBAS */
+.tarjeta img{
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.50);
+}
 
 
 /* RESPONSIVE */
@@ -242,17 +270,13 @@ a{
     transition: transform 0.3s ease-in-out;
     }
 
-    .overlay {
+    .overlay, .overlay-plantas {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0,0,0,0.50);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
+        background: rgba(0,0,0,0.70);
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
     }
@@ -267,8 +291,11 @@ a{
     }
 
       
-    .tarjeta:hover .overlay {
+    .tarjeta:hover .overlay, .tarjeta:hover .overlay-plantas {
         opacity: 1;
     }
 
+    .accordion-button::after {
+        display: none;
+    }
 }
