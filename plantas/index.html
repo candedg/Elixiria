@@ -16,23 +16,26 @@
 </head>
 <body class="fondo-color-ppal columna textura">
     <!-- CONTENEDOR PRINCIPAL -->
-    <div class="contenedor-pricipal container-fluid p-0">
+    <div class="contenedor-pricipal container-fluid p-0 columna">
         <!-- HEADER -->
         <header>
+            <!-- NAVEGACIÓN -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-0">
                 <div class="container-fluid d-flex flex-row-reverse fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo d-flex align-items-center py-2 m-0" href="../index.html">
                         <img src="../img/elementos/logo.png" alt="logo de elixiria">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- MENU DESPLEGABLE  -->
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ">
-                            <li class="nav-item dropdown ">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle subtitulo" data-bs-toggle="dropdown" href="../index.html" role="button" aria-expanded="false">Menú</a>
                                 <ul class="dropdown-menu  fondo-color-secundario">
-                                    <li ><a class="dropdown-item texto-resaltado" href="../plantas/index.html">Plantas Medicinales</a></li>
+                                    <li ><a class="dropdown-item texto-resaltado" href="index.html">Plantas Medicinales</a></li>
                                     <li><a class="dropdown-item texto-resaltado" href="../cristales/index.html">Cristales Energéticos</a></li>
                                     <li><a class="dropdown-item texto-resaltado" href="../recetas/index.html">Recetas de Cocina Mágica</a></li>
                                     <li><a class="dropdown-item texto-resaltado" href="../historia.html">Historia</a></li>
@@ -48,18 +51,81 @@
                     </div>
                 </div>
             </nav>
-        </header>
+        </header>              
+        <main class="col-12 col-lg-9 fondo-oscuro-difuminado">
+            <section>
+                <div id="carouselPlantas" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/carousel-plantas/img-carousel-1.jpeg" class="d-block w-100" alt="foto de hierbas y flores medicinales">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/carousel-plantas/img-carousel-2.jpeg" class="d-block w-100" alt="foto de hierbas y flores medicinales">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/carousel-plantas/img-carousel-3.jpeg" class="d-block w-100" alt="foto de hierbas y flores medicinales">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/carousel-plantas/img-carousel-4.jpg" class="d-block w-100" alt="foto de hierbas y flores medicinales">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/carousel-plantas/img-carousel-5.jpg" class="d-block w-100" alt="foto de hierbas y flores medicinales">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/carousel-plantas/img-carousel-6.jpg" class="d-block w-100" alt="foto de hierbas y flores medicinales">
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            <section class="f-c-a-transparente p-3">
+                <h2 class="titulo-oscuro text-center ">Plantas medicinales: Equilibrio y Bienestar</h2>
+                <p class="tx-contenido-oscuro px-3">
+                    Las plantas medicinales han sido utilizadas a lo largo de la historia por sus propiedades curativas y energéticas. Desde infusiones relajantes hasta remedios naturales para la piel, cada hierba y flor posee beneficios únicos que pueden ayudarte a mejorar tu bienestar físico, mental y espiritual. Explora esta sección para descubrir sus usos y propiedades.
+                </p>
+            </section>
+            <section class=" p-3 my-3 d-flex flex-column">
+                <h2 class="titulo text-center">Beneficios generales</h2>
+                <div class="p-2 d-flex flex-column flex-md-row">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="img/seccion-beneficios/item-1.jpg" alt="foto planta de lavanda" class="img-item-circular">
+                        <p class="texto-contenido text-center p-1">Bienestar natural: relajación, equilibrio emocional, mejora del sueño</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="img/seccion-beneficios/item-2.jpg" alt="foto planta de romero" class="img-item-circular">
+                        <p class="texto-contenido text-center p-1">Propiedades terapéuticas: efectos digestivos, antiinflamatorios y cicatrizantes</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="img/seccion-beneficios/item-3.jpg" alt="foto planta de salvia" class="img-item-circular">
+                        <p class="texto-contenido text-center p-1">Energia y protección: rituales, armonizacion de espacios y limpieza espiritual.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="f-c-a-transparente p-3 d-flex flex-column align-items-center">
+                <h2 class="titulo-oscuro text-center">Explora nuestras categorías:</h2>
+                <div class="d-flex flex-column flex-md-row m-2">
+                    <a href="hierbas.html" class="portada-plantas mb-3 my-md-3 mx-md-5 d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/portada-hierbas.jpg" alt="foto planta salvia">
+                        <button id="boton-home" class="texto-boton text-center py-2 px-3 w-auto fondo-color-secundario">HIERBAS</button>
+                    </a>
+                    <a href="flores.html" class="portada-plantas mb-3 my-md-3 mx-md-5 d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/portada-flores.jpg" alt="foto planta de manzanilla">
+                        <button id="boton-home" class="texto-boton text-center py-2 px-3 w-auto fondo-color-secundario">FLORES</button>
+                    </a>
+                </div>
+                <p class="tx-contenido-oscuro text-center mx-5 mb-5"> <strong>¿No sabes por dónde empezar?</strong> Explora las <a href="../recetas/index.html">recetas prácticas</a> y descubre formas sencillas de aprovechar sus propiedades en el día a día.</p>   
+            </section>
 
             
-        <main>
-            
         </main>
+        <!-- FOOTER -->
         <footer>
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom p-0">
                 <div class="container-fluid d-flex fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo-footer d-flex align-items-center py-2" href="../index.html">
                         <img src="../img/elementos/logo.png" alt="logo de elixiria">
                     </a>
+                    <!-- PAGINAS COMPLEMENTARIAS -->
                     <ul class="navbar-nav d-flex flex-row">
                         <li class="nav-item pe-1">
                             <a class="nav-link texto-resaltado" href="../contacto.html">Contacto</a>
@@ -73,6 +139,7 @@
         </footer>
 
     </div>
+    <!-- LINK A BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous">

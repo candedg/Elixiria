@@ -94,9 +94,14 @@
     background: #ccb47f94;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    -webkit-box-shadow: 0px 5px 21px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 5px 21px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 5px 21px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 21px 0px rgba(0,0,0,0.75);
+}
+
+.f-c-s-transparente{
+    background: #2b272873;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0px 5px 21px 0px rgba(0,0,0,0.75);
 }
 
 .color-secundario{
@@ -138,7 +143,8 @@ a{
 .fondo-oscuro-difuminado{
     background-color: #2b27282e;
     backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0px 5px 21px 0px rgba(0,0,0,0.75);
     
 }
 
@@ -149,7 +155,7 @@ a{
     100% { transform: scale(1); }
   }
 
- #boton-home{
+ #boton-home {
     border-radius: 5px;
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.50);
     border: #CCB47F 1px;
@@ -172,6 +178,33 @@ a{
     display: none;
 }
 
+/* INDEX PLANTAS MEDICINALES */
+.img-item-circular{
+    display: block;
+    border-radius: 100%;
+    height: 150px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.50);
+}
+
+.portada-plantas {
+    position: relative;
+    display: inline-block;
+}
+
+.portada-plantas img {
+    height: 280px;
+    border-radius: 100%;
+    display: block;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.50);
+}
+
+.portada-plantas #boton-home {
+    position: absolute;
+
+}
+
+
+
 
 /* RESPONSIVE */
 /* MEDIA QUERIES PARA TAMAÑO LAPTOP */
@@ -192,7 +225,7 @@ a{
         display: none;
     }
 
-    #boton-home{
+    .tarjeta #boton-home{
         display: none;
     }
 
@@ -235,6 +268,7 @@ a{
 
       
     .tarjeta:hover .overlay {
-        opacity: 1; /* Muestra la capa con texto */
+        opacity: 1;
     }
+
 }
