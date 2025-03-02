@@ -156,6 +156,11 @@ nav{
     height: 25px;
 }
 
+footer{
+    max-width: 2000px;
+    width: 100%;
+}
+
 /* HOME */
 .fondo-oscuro-difuminado{
     background-color: #2b27282e;
