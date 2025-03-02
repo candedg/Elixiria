@@ -35,6 +35,11 @@
 }
 
 /* ESTILOS DE TODA LA WEB */
+.contenedor-pricipal{
+    max-width: 2000px;
+    width: 100%;
+}
+
 .titulo{
     font-family: "Mirza", serif;
     font-weight: 700;
@@ -147,9 +152,12 @@ a{
     height: 45px;
 }
 nav{
-    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
 
+    max-width: 2000px;
+    margin: auto;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
 }
+
 
 /* FOOTER */
 .logo-footer img{
@@ -157,7 +165,6 @@ nav{
 }
 
 footer{
-    max-width: 2000px;
     width: 100%;
 }
 
@@ -208,19 +215,23 @@ footer{
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.50);
 }
 
-.portada-plantas {
+.portada-plantas, .portada-cristales {
     position: relative;
     display: inline-block;
 }
 
-.portada-plantas img {
+.portada-plantas img, .portada-cristales img{
     height: 280px;
     border-radius: 100%;
     display: block;
     box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.50);
 }
 
-.portada-plantas #boton-home {
+.portada-cristales img{
+    height: 200px;
+}
+
+.portada-plantas #boton-home, .portada-cristales #boton-home{
     position: absolute;
 
 }

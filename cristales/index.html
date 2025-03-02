@@ -16,23 +16,26 @@
 </head>
 <body class="fondo-color-ppal columna textura">
     <!-- CONTENEDOR PRINCIPAL -->
-    <div class="contenedor-pricipal container-fluid p-0">
+    <div class="contenedor-pricipal container-fluid p-0 columna">
         <!-- HEADER -->
         <header>
+            <!-- NAVEGACIÓN -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-0">
                 <div class="container-fluid d-flex flex-row-reverse fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo d-flex align-items-center py-2 m-0" href="../index.html">
                         <img src="../img/elementos/logo.png" alt="logo de elixiria">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- MENU DESPLEGABLE  -->
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ">
-                            <li class="nav-item dropdown ">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle subtitulo" data-bs-toggle="dropdown" href="../index.html" role="button" aria-expanded="false">Menú</a>
                                 <ul class="dropdown-menu  fondo-color-secundario">
-                                    <li ><a class="dropdown-item texto-resaltado" href="../plantas/index.html">Plantas Medicinales</a></li>
+                                    <li ><a class="dropdown-item texto-resaltado" href="index.html">Plantas Medicinales</a></li>
                                     <li><a class="dropdown-item texto-resaltado" href="../cristales/index.html">Cristales Energéticos</a></li>
                                     <li><a class="dropdown-item texto-resaltado" href="../recetas/index.html">Recetas de Cocina Mágica</a></li>
                                     <li><a class="dropdown-item texto-resaltado" href="../historia.html">Historia</a></li>
@@ -48,18 +51,86 @@
                     </div>
                 </div>
             </nav>
-        </header>
-
-            
-        <main>
-            
+        </header>              
+        <main class="col-12 col-lg-9 pt-5 mt-md-5 fondo-oscuro-difuminado">
+            <section>
+                <div id="carouselPlantas" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/carousel-cristales/img-carousel-1.jpg" class="d-block w-100" alt="foto de cristales y piedras energéticas">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/carousel-cristales/img-carousel-2.jpg" class="d-block w-100" alt="foto de cristales y piedras energéticas">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/carousel-cristales/img-carousel-3.jpg" class="d-block w-100" alt="foto de cristales y piedras energéticas">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/carousel-cristales/img-carousel-4.jpg" class="d-block w-100" alt="foto de cristales y piedras energéticas">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/carousel-cristales/img-carousel-5.jpeg" class="d-block w-100" alt="foto de cristales y piedras energéticas">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/carousel-cristales/img-carousel-6.jpg" class="d-block w-100" alt="foto de cristales y piedras energéticas">
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            <section class="f-c-a-transparente p-3">
+                <h2 class="titulo-oscuro text-center ">Cristales: Energia y Armonía</h2>
+                <p class="tx-contenido-oscuro px-3">
+                    Los cristales han sido valorados desde la antigüedad por su capacidad de canalizar y equilibrar la energía. Cada piedra posee vibraciones únicas que pueden influir en el bienestar emocional, mental y espiritual. Explora esta sección para descubrir sus propiedades y cómo incorporarlas en tu vida diaria.
+                </p>
+            </section>
+            <section class=" p-3 my-3 d-flex flex-column">
+                <h2 class="titulo text-center">Beneficios generales</h2>
+                <div class="p-2 d-flex flex-column flex-md-row">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="img/seccion-beneficios/item-1.jpg" alt="foto amatista" class="img-item-circular">
+                        <p class="texto-contenido text-center p-1">Equilibrio emocional y mental: absorber, canalizar y transformar energías.</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="img/seccion-beneficios/item-2.jpg" alt="foto turmalina" class="img-item-circular">
+                        <p class="texto-contenido text-center p-1">Protección energética: escudos contra energías negativas o ambientes cargados.</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="img/seccion-beneficios/item-3.jpg" alt="foto cuarzo transparente" class="img-item-circular">
+                        <p class="texto-contenido text-center p-1">Intención y manifestación: rituales y meditaciones para amplificar intenciones.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="f-c-a-transparente p-3 d-flex flex-column align-items-center">
+                <h2 class="titulo-oscuro text-center">Explora nuestras categorías:</h2>
+                <div class="d-flex flex-column flex-md-row  m-2">
+                    <a href="tierra.html" class="portada-cristales mb-3 my-md-3 mx-md-3 d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/portada-tierra.jpg" alt="foto planta salvia">
+                        <button id="boton-home" class="texto-boton text-center py-2 px-3 w-auto fondo-color-secundario">TIERRA</button>
+                    </a>
+                    <a href="aire.html" class="portada-cristales mb-3 my-md-3 mx-md-3 d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/portada-aire.jpg" alt="foto planta salvia">
+                        <button id="boton-home" class="texto-boton text-center py-2 px-3 w-auto fondo-color-secundario">AIRE</button>
+                    </a>
+                    <a href="fuego.html" class="portada-cristales mb-3 my-md-3 mx-md-3 d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/portada-fuego.jpg" alt="foto planta de manzanilla">
+                        <button id="boton-home" class="texto-boton text-center py-2 px-3 w-auto fondo-color-secundario">FUEGO</button>
+                    </a>
+                    <a href="agua.html" class="portada-cristales mb-3 my-md-3 mx-md-3 d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/portada-agua.jpeg" alt="foto planta salvia">
+                        <button id="boton-home" class="texto-boton text-center py-2 px-3 w-auto fondo-color-secundario">AGUA</button>
+                    </a>
+                </div>
+            </section>
         </main>
+        <!-- FOOTER -->
         <footer>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom p-0">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
                 <div class="container-fluid d-flex fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo-footer d-flex align-items-center py-2" href="../index.html">
                         <img src="../img/elementos/logo.png" alt="logo de elixiria">
                     </a>
+                    <!-- PAGINAS COMPLEMENTARIAS -->
                     <ul class="navbar-nav d-flex flex-row">
                         <li class="nav-item pe-1">
                             <a class="nav-link texto-resaltado" href="../contacto.html">Contacto</a>
@@ -73,6 +144,7 @@
         </footer>
 
     </div>
+    <!-- LINK A BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous">
