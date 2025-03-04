@@ -242,6 +242,7 @@ footer{
     box-shadow: 0px 0px 8px 0px #0000006f;
     border: 1px solid #CCB47F;
     cursor: pointer;
+    font-size: 0.9rem;
 }
 
 /* HIERBAS */
@@ -313,5 +314,9 @@ footer{
 
     .accordion-button::after {
         display: none;
+    }
+
+    .boton-nav{
+        font-size: 1.2rem;
     }
 }

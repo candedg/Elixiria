@@ -16,23 +16,26 @@
 </head>
 <body class="fondo-color-ppal columna textura">
     <!-- CONTENEDOR PRINCIPAL -->
-    <div class="contenedor-pricipal container-fluid p-0">
+    <div class="contenedor-pricipal container-fluid p-0 columna">
         <!-- HEADER -->
         <header>
+            <!-- NAVEGACIÓN -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-0">
                 <div class="container-fluid d-flex flex-row-reverse fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo d-flex align-items-center py-2 m-0" href="../index.html">
                         <img src="../img/elementos/logo.png" alt="logo de elixiria">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- MENU DESPLEGABLE  -->
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ">
-                            <li class="nav-item dropdown ">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle subtitulo" data-bs-toggle="dropdown" href="../index.html" role="button" aria-expanded="false">Menú</a>
                                 <ul class="dropdown-menu  fondo-color-secundario">
-                                    <li ><a class="dropdown-item texto-resaltado" href="../plantas/index.html">Plantas Medicinales</a></li>
+                                    <li ><a class="dropdown-item texto-resaltado" href="index.html">Plantas Medicinales</a></li>
                                     <li><a class="dropdown-item texto-resaltado" href="../cristales/index.html">Cristales Energéticos</a></li>
                                     <li><a class="dropdown-item texto-resaltado" href="../recetas/index.html">Recetas de Cocina Mágica</a></li>
                                     <li><a class="dropdown-item texto-resaltado" href="../historia.html">Historia</a></li>
@@ -48,18 +51,202 @@
                     </div>
                 </div>
             </nav>
-        </header>
-
-            
-        <main>
-            
+        </header>  
+        <main class="col-12 col-lg-9 pt-5 mt-md-5 container">
+            <!-- NAVEGACIÓN ENTRE SUB-SECCIONES -->
+            <div class="navegacion-subpaginas mt-3 pt-2 d-flex justify-content-center">
+                <a href="tierra.html" class="boton-nav texto-boton fondo-oscuro-difuminado px-3 py-2 m-2">TIERRA</a>
+                <a href="aire.html" class="boton-nav texto-boton fondo-color-secundario px-3 py-2 m-2">AIRE</a>
+                <a href="fuego.html" class="boton-nav texto-boton fondo-oscuro-difuminado px-3 py-2 m-2">FUEGO</a>
+                <a href="agua.html" class="boton-nav texto-boton fondo-oscuro-difuminado px-3 py-2 m-2">AGUA</a>
+            </div>
+            <!-- CARDS DE HIERBAS CON SUS PROPIEDADES -->
+            <div class="row">
+                <!-- FLUORITA -->
+                <section class="col-12 col-md-6 p-1">
+                    <div class="accordion" id="accordionFluorita">
+                        <div class="accordion-item tarjeta">
+                          <h2 class="accordion-header ">
+                            <button class="accordion-button d-flex flex-column m-0 p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <img src="img/subseccion-aire/aire-fluorita.jpg" alt="imagen de cristal de fluorita" class="col-12 blur">
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse f-c-s-transparente overlay-plantas d-lg-flex align-items-center justify-content-center" data-bs-parent="#accordionFluorita">
+                                <div class="accordion-body texto-contenido">
+                                    <h3 class="titulo">Fluorita</h3>
+                                    <p>
+                                        <span class="texto-resaltado">Descripción:</span> cristal translúcido que puede encontrarse en una variedad de colores, desde verde y violeta hasta azul y amarillo.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado">Propiedades energéticas:</span> concentración, intuición y protección energética. Disipa pensamientos negativos, mejora la toma de decisiones y favorece la armonización de la mente y las emociones. Absorbe energías tóxicas del entorno, protege el aura.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado"> Usos:</span> se puede colocar en el espacio de trabajo o estudio para mejorar la concentración, meditar con ella para alinear los chakras o llevarla como amuleto para protegerse de energías negativas.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado">Asociaciones zodiacales:</span> Géminis, Piscis y Acuario.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Labradorita -->
+                <section class="col-12 col-md-6 p-1">
+                    <div class="accordion" id="accordionLabradorita">
+                        <div class="accordion-item tarjeta">
+                          <h2 class="accordion-header ">
+                            <button class="accordion-button d-flex flex-column m-0 p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDos" aria-expanded="false" aria-controls="collapseDos">
+                                <img src="img/subseccion-aire/aire-labradorita.jpg" alt="imagen de piedra Labradorita" class="col-12 blur">
+                            </button>
+                          </h2>
+                          <div id="collapseDos" class="accordion-collapse collapse f-c-s-transparente overlay-plantas d-lg-flex align-items-center justify-content-center" data-bs-parent="#accordionLabradorita">
+                                <div class="accordion-body texto-contenido">
+                                    <h3 class="titulo">Labradorita</h3>
+                                    <p>
+                                        <span class="texto-resaltado">Descripción:</span> piedra mística con reflejos iridiscentes en tonos azul, verde y dorado.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado">Propiedades energéticas:</span> piedra de protección y despertar espiritual. Potencia la intuición, fortalece la mente y ayuda en procesos de cambio. Útil para disipar miedos e inseguridades, brinda confianza y claridad.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado"> Usos:</span> ideal para meditar, fortalecer la intuición y potenciar la creatividad. Llevarla como amuleto ayuda a protegerse de energías negativas y mantener el equilibrio emocional.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado">Asociaciones zodiacales:</span> Sagitario, Escorpio y Leo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Cuarzo Ahumado -->
+                <section class="col-12 col-md-6 p-1">
+                    <div class="accordion" id="accordionAhumado">
+                        <div class="accordion-item tarjeta">
+                          <h2 class="accordion-header ">
+                            <button class="accordion-button d-flex flex-column m-0 p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
+                                <img src="img/subseccion-aire/aire-cuarzo-ahumado.jpg" alt="imagen de cristal Cuarzo Ahumado" class="col-12 blur">
+                            </button>
+                          </h2>
+                          <div id="collapseTres" class="accordion-collapse collapse f-c-s-transparente overlay-plantas d-lg-flex align-items-center justify-content-center" data-bs-parent="#accordionAhumado">
+                                <div class="accordion-body texto-contenido">
+                                    <h3 class="titulo">Cuarzo Ahumado</h3>
+                                    <p>
+                                        <span class="texto-resaltado">Descripción:</span> piedra translúcida en tonos marrón y gris, con una energía profundamente estabilizadora.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado">Propiedades energéticas:</span> absorbe y transforma la energía negativa, proporcionando estabilidad y claridad mental. Libera el estrés, la ansiedad y los pensamientos negativos, promoviendo una sensación de calma y enraizamiento.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado"> Usos:</span> se utiliza en meditaciones para soltar emociones bloqueadas, como amuleto de protección contra energías densas o colocado en espacios para armonizar la energía del ambiente.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado">Asociaciones zodiacales:</span> Capricornio, Escorpio y Sagitario.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Sodalita -->
+                <section class="col-12 col-md-6 p-1">
+                    <div class="accordion" id="accordionSodalita">
+                        <div class="accordion-item tarjeta">
+                          <h2 class="accordion-header ">
+                            <button class="accordion-button d-flex flex-column m-0 p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCuatro" aria-expanded="false" aria-controls="collapseCuatro">
+                                <img src="img/subseccion-aire/aire-sodalita.jpg" alt="imagen de cristal de sodalita" class="col-12 blur">
+                            </button>
+                          </h2>
+                          <div id="collapseCuatro" class="accordion-collapse collapse f-c-s-transparente overlay-plantas d-lg-flex align-items-center justify-content-center" data-bs-parent="#accordionSodalita">
+                                <div class="accordion-body texto-contenido">
+                                    <h3 class="titulo">Sodalita</h3>
+                                    <p>
+                                        <span class="texto-resaltado">Descripción:</span> piedra azul profundo con vetas blancas que evocan la inmensidad del cielo y el océano.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado">Propiedades energéticas:</span> favorece la concentración, la intuición y el pensamiento lógico, siendo ideal para el estudio y la toma de decisiones. También ayuda a equilibrar las emociones y fomentar la comunicación sincera.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado"> Usos:</span> se puede llevar como amuleto para potenciar la expresión y la confianza en uno mismo, colocar en el espacio de trabajo para mejorar la concentración o usar en meditaciones para conectar con la intuición.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado">Asociaciones zodiacales:</span> Sagitario, Acuario y Virgo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Aguamarina -->
+                <section class="col-12 col-md-6 p-1">
+                    <div class="accordion" id="accordionAguamarina">
+                        <div class="accordion-item tarjeta">
+                          <h2 class="accordion-header ">
+                            <button class="accordion-button d-flex flex-column m-0 p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCinco" aria-expanded="false" aria-controls="collapseCinco">
+                                <img src="img/subseccion-aire/aire-aguamarina.jpg" alt="imagen de cristal de Aguamarina" class="col-12 blur">
+                            </button>
+                          </h2>
+                          <div id="collapseCinco" class="accordion-collapse collapse f-c-s-transparente overlay-plantas d-lg-flex align-items-center justify-content-center" data-bs-parent="#accordionAguamarina">
+                                <div class="accordion-body texto-contenido">
+                                    <h3 class="titulo">Aguamarina</h3>
+                                    <p>
+                                        <span class="texto-resaltado">Descripción:</span> de tonos azul verdoso translúcido, evoca la pureza y serenidad del agua. Considerada desde la antigüedad como un amuleto de protección para viajeros y marineros.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado">Propiedades energéticas:</span> promueve la calma, la claridad mental y la comunicación sincera. Se asocia con la reducción del estrés, el fortalecimiento del coraje y la expresión emocional equilibrada.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado"> Usos:</span> se puede llevar como joya para fomentar la tranquilidad y la confianza en la comunicación, colocar en el hogar para armonizar las energías o utilizar en meditaciones para conectar con la paz interior.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado">Asociaciones zodiacales:</span> Piscis, Acuario y Géminis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Crisoprasa -->
+                <section class="col-12 col-md-6 p-1">
+                    <div class="accordion" id="accordionCrisoprasa">
+                        <div class="accordion-item tarjeta">
+                          <h2 class="accordion-header ">
+                            <button class="accordion-button d-flex flex-column m-0 p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">
+                                <img src="img/subseccion-aire/aire-crisoprasa.jpg" alt="imagen de cristal Crisoprasa" class="col-12 blur">
+                            </button>
+                          </h2>
+                          <div id="collapseSeis" class="accordion-collapse collapse f-c-s-transparente overlay-plantas d-lg-flex align-items-center justify-content-center" data-bs-parent="#accordionCrisoprasa">
+                                <div class="accordion-body texto-contenido">
+                                    <h3 class="titulo">Crisoprasa</h3>
+                                    <p>
+                                        <span class="texto-resaltado">Descripción:</span> de un vibrante color verde manzana, a veces con tonos amarillos, asociada con la abundancia y la renovación.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado">Propiedades energéticas:</span> favorece la sanación emocional, la confianza en uno mismo y la apertura del corazón. Se dice que ayuda a liberar emociones reprimidas y atraer la prosperidad y el amor incondicional.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado"> Usos:</span> se puede llevar como amuleto para fomentar la autoestima, colocar en espacios de trabajo para estimular la creatividad o usar en meditaciones para calmar la mente y conectar con el chakra corazón.
+                                    </p>
+                                    <p>
+                                        <span class="texto-resaltado">Asociaciones zodiacales:</span> Tauro, Cáncer y Libra.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
+        <!-- FOOTER -->
         <footer>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom p-0">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
                 <div class="container-fluid d-flex fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo-footer d-flex align-items-center py-2" href="../index.html">
                         <img src="../img/elementos/logo.png" alt="logo de elixiria">
                     </a>
+                    <!-- PAGINAS COMPLEMENTARIAS -->
                     <ul class="navbar-nav d-flex flex-row">
                         <li class="nav-item pe-1">
                             <a class="nav-link texto-resaltado" href="../contacto.html">Contacto</a>
@@ -73,6 +260,7 @@
         </footer>
 
     </div>
+    <!-- LINK A BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous">
