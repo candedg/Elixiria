@@ -16,20 +16,23 @@
 </head>
 <body class="fondo-color-ppal columna textura">
     <!-- CONTENEDOR PRINCIPAL -->
-    <div class="contenedor-pricipal container-fluid p-0">
+    <div class="contenedor-pricipal container-fluid p-0 columna">
         <!-- HEADER -->
-        <header>
+        <header class="columna">
+            <!-- NAVEGACIÓN -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-0">
                 <div class="container-fluid d-flex flex-row-reverse fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo d-flex align-items-center py-2 m-0" href="index.html">
                         <img src="img/elementos/logo.png" alt="logo de elixiria">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- MENU DESPLEGABLE  -->
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ">
-                            <li class="nav-item dropdown ">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle subtitulo" data-bs-toggle="dropdown" href="index.html" role="button" aria-expanded="false">Menú</a>
                                 <ul class="dropdown-menu  fondo-color-secundario">
                                     <li ><a class="dropdown-item texto-resaltado" href="./plantas/index.html">Plantas Medicinales</a></li>
@@ -48,18 +51,57 @@
                     </div>
                 </div>
             </nav>
-        </header>
-
-            
-        <main>
-            
+        </header>            
+        <!-- SECCIONES INFO -->
+        <main class="col-12 col-lg-9 pt-5 mt-md-5 fondo-oscuro-difuminado ">
+            <!-- SOBRE MI -->
+            <section class=" mt-lg-3 pt-lg-0 columna">
+                <h2 class="titulo pt-4 pt-md-2 mt-md-0 text-center">Sobre la creadora de este proyecto</h2>
+                <div class="d-flex flex-column flex-md-row mx-3 my-md-3 mx-md-5 align-items-center">
+                    <img src="img/elementos/imagen-estudiante.jpg" alt="foto de perfil de estudiante" class="img-estudiante mb-3">
+                    <ul class="texto-resaltado mx-md-2">
+                        <li><strong>Estudiante:</strong> Candela Di Genova.</li>
+                        <li><strong>Carrera:</strong> Licenciatura en Artes Multimediales.</li>
+                        <li><strong>Institución:</strong> Universidad Nacional de las Artes - UNA</li>
+                        <li><strong>Ciclo lectivo:</strong> 2024 - 2025</li>
+                        <li><strong>Materia:</strong> Informática General.</li>
+                        <li><strong>Cátedra:</strong> Drelichman, Turno Mañana.</li>
+                        <li><strong>Trabajo Práctico Nro.:</strong> FINAL</li>
+                    </ul>
+                </div>
+            </section>  
+            <!-- INFO -->
+            <div class="f-c-a-transparente d-flex flex-column align-items-center">
+                <p class="tx-contenido-oscuro px-3 px-md-5 mt-3">El Trabajo Práctico para el Final de la materia de Informática General 2024 consistió en diseñar y desarrollar un sitio web sobre una temática a elección utilizando HTML, CSS, JavaScript y algún framework o librerías. Además de contener un juego integrado y estar publicaado en internet mediante un servidor de elección.</p>
+                <p class="tx-contenido-oscuro px-3 px-md-5">El proyecto incluyó la investigación, la planificación, el diseño, la creación de múltiples páginas (principal, secciones y complementarias) y la implementación de funcionalidades como galerías dinámicas y validación de formularios. Se realizaron pruebas de compatibilidad en diferentes dispositivos y navegadores, se documentó el proceso en una carpeta de proyecto y los avances en el desarrollo fueron subidos a GitHub.</p>
+                <p class="tx-contenido-oscuro px-3 px-md-5">Este trabajo refleja habilidades en desarrollo web, diseño y gestión integral de proyectos.</p>
+                <ul class="row justify-content-center align-items-center text-center p-3 herramientas">
+                    <li  class="col-4 col-md-1 m-md-2"><img src="img/logos-herramientas/html.png"
+                                 alt="icono html5"></li>
+                    <li class="col-4 col-md-1 m-md-2"><img src="img/logos-herramientas/css.png"
+                                 alt="icono css" ></li>
+                    <li  class="col-4 col-md-1 m-md-2"><img src="img/logos-herramientas/javascript.png"
+                                 alt="icono javascript"></li>
+                    <li class="col-4 col-md-1 m-md-2"><img src="img/logos-herramientas/bootstrap-framework.png"
+                                 alt="icono bootstrap" ></li>
+                    <li class="col-4 col-md-1 m-md-2"><img src="img/logos-herramientas/visual-studio-code.png"
+                                 alt="icono visual estudio code"></li>
+                    <li class="col-4 col-md-1 m-md-2"><img src="img/logos-herramientas/git.png"
+                                 alt="icono git"></li>
+                    <li class="col-4 col-md-1 m-md-2"><img src="img/logos-herramientas/github.png"
+                                 alt="icono github"></li>
+                </ul>
+            </div>
         </main>
+        <!-- FOOTER -->
         <footer>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom p-0">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
                 <div class="container-fluid d-flex fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo-footer d-flex align-items-center py-2" href="index.html">
                         <img src="img/elementos/logo.png" alt="logo de elixiria">
                     </a>
+                    <!-- PAGINAS COMPLEMENTARIAS -->
                     <ul class="navbar-nav d-flex flex-row">
                         <li class="nav-item pe-1">
                             <a class="nav-link texto-resaltado" href="contacto.html">Contacto</a>
@@ -71,8 +113,8 @@
                 </div>
             </nav>
         </footer>
-
     </div>
+    <!-- LINK A BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous">
