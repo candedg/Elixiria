@@ -251,11 +251,20 @@ footer{
 }
 
 /* SECICION HISTORIA */
-.img-contenido-historia{
+.img-contenido-historia, .img-estudiante{
     display: block;
     border-radius: 100%;
     height: 250px;
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.50);
+}
+
+/* SECCION ALUMNA */
+.herramientas li{
+    list-style: none;
+}
+
+.herramientas img{
+    height: 90px;
 }
 
 /* RESPONSIVE */
