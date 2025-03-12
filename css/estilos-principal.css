@@ -184,7 +184,7 @@ footer{
     100% { transform: scale(1); }
   }
 
- #boton-home {
+.boton-home {
     border-radius: 5px;
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.50);
     border: 1px solid #CCB47F;
@@ -231,7 +231,7 @@ footer{
     height: 200px;
 }
 
-.portada-plantas #boton-home, .portada-cristales #boton-home{
+.portada-plantas .boton-home, .portada-cristales .boton-home{
     position: absolute;
 
 }
@@ -270,7 +270,7 @@ footer{
         display: none;
     }
 
-    .tarjeta #boton-home{
+    .tarjeta .boton-home{
         display: none;
     }
 
