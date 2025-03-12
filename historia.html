@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elixiria | Historia</title>
+    <title>Elixiria | Home</title>
     <!-- LINKS BOOTSTRAP-->
         <link rel="stylesheet"
               href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -16,20 +16,23 @@
 </head>
 <body class="fondo-color-ppal columna textura">
     <!-- CONTENEDOR PRINCIPAL -->
-    <div class="contenedor-pricipal container-fluid p-0">
+    <div class="contenedor-pricipal container-fluid p-0 columna">
         <!-- HEADER -->
-        <header>
+        <header class="columna">
+            <!-- NAVEGACIÓN -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-0">
                 <div class="container-fluid d-flex flex-row-reverse fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo d-flex align-items-center py-2 m-0" href="index.html">
                         <img src="img/elementos/logo.png" alt="logo de elixiria">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- MENU DESPLEGABLE  -->
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ">
-                            <li class="nav-item dropdown ">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle subtitulo" data-bs-toggle="dropdown" href="index.html" role="button" aria-expanded="false">Menú</a>
                                 <ul class="dropdown-menu  fondo-color-secundario">
                                     <li ><a class="dropdown-item texto-resaltado" href="./plantas/index.html">Plantas Medicinales</a></li>
@@ -48,18 +51,149 @@
                     </div>
                 </div>
             </nav>
-        </header>
-
-            
-        <main>
-            
+        </header>            
+        <!-- SECCIONES INFO -->
+        <main class="col-12 col-lg-9 pt-5 mt-md-5 fondo-oscuro-difuminado ">
+            <!-- INTRODUCCION -->
+            <section class=" mt-lg-3 pt-lg-0">
+                <h2 class="titulo pt-4 pt-md-2 mt-md-0 text-center">Historia y Tradición de las Hierbas y Cristales</h2>
+                <p class="texto-contenido mx-3 my-0 pb-4 text-center">Desde tiempos antiguos, la humanidad ha encontrado en la naturaleza una fuente de sanación y equilibrio. Tanto las hierbas medicinales como los cristales energéticos han sido empleados en distintas culturas para tratar enfermedades, fortalecer el espíritu y conectar con la energía del universo.</p>
+                <p class="texto-contenido mx-3 my-0 pb-4 text-center">A lo largo de la historia, estas prácticas han evolucionado, adaptándose a cada sociedad, pero su esencia sigue intacta: la búsqueda del bienestar a través de los elementos naturales. En esta sección, exploraremos cómo las civilizaciones han utilizado hierbas y cristales en la medicina, la espiritualidad y la vida cotidiana.</p>
+            </section>
+            <!-- HERBOLARIA -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center mb-4">
+                <img src="img/seccion-historia/portada-herbolaria-antigua.jpg" alt="herbolaria antigua" class="portada-horizontal img-historia">
+                <div class="d-flex flex-column">   
+                    <h3 class="titulo-oscuro text-center px-lg-4 pt-4 pt-md-2"> Hierbas Medicinales a través del tiempo</h3>
+                    <h4 class="titulo-oscuro text-center px-lg-4 pt-4 pt-md-2">Antigüedad: El origen del conocimiento herbal</h4>
+                    <p class="tx-contenido-oscuro px-3 px-md-5 mb-lg-0">Las primeras civilizaciones documentaron el uso de plantas medicinales hace más de 5,000 años. Las hierbas eran consideradas sagradas y se utilizaban en rituales, remedios y hasta en la momificación de los muertos. </p>
+                </div>
+                <div class="d-flex flex-column flex-md-row mx-3 my-md-3 mx-md-5 align-items-center">
+                    <img src="img/seccion-historia/contenido-herbolaria-1.jpg" alt="imagen de herbolaria antigua mesopotamica" class="img-contenido-historia mb-3">
+                    <div>
+                        <h5 class="titulo-oscuro mx-md-2">Egipto y Mesopotamia</h5>
+                        <ul class="tx-contenido-oscuro mx-md-2">
+                            <li>El Papiro de Ebers (1,500 a.C.) describe más de 800 recetas herbales, incluyendo el uso de aloe vera, mirra y tomillo.</li>
+                            <li>Los babilonios utilizaban plantas como el anís y la menta para tratar problemas digestivos.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row mx-3 my-md-3 mx-md-5 align-items-center">
+                    <img src="img/seccion-historia/contenido-herbolaria-2.jpg" alt="imagen de herbolaria tradicional china" class="img-contenido-historia mb-3">
+                    <div>
+                        <h5 class="titulo-oscuro mx-md-2">India y China</h5>
+                        <ul class="tx-contenido-oscuro mx-md-2">
+                            <li>La Medicina Ayurvédica (India) menciona el uso de cúrcuma, ashwagandha y jengibre para equilibrar el cuerpo y la mente.</li>
+                            <li>La Medicina Tradicional China (MTC) ha empleado hierbas como el ginseng y la salvia roja durante milenios.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row mx-3 my-md-3 mx-md-5 align-items-center">
+                    <img src="img/seccion-historia/contenido-herbolaria-3.jpg" alt="imagen de herbolaria en grecia y roma" class="img-contenido-historia mb-3">
+                    <div>
+                        <h5 class="titulo-oscuro mx-md-2">Grecia y Roma</h5>
+                        <ul class="tx-contenido-oscuro mx-md-2">
+                            <li>Hipócrates (padre de la medicina) usaba hierbas como la manzanilla y el orégano en tratamientos naturales.</li>
+                            <li>Dioscórides, médico romano, escribió De Materia Medica, un manual con más de 600 plantas curativas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 class="titulo-oscuro text-center px-lg-4 pt-4 pt-md-2">Edad Media y Renacimiento: Medicina herbal en Europa</h4>
+                <p class="tx-contenido-oscuro px-3 px-md-5 mb-lg-0">Durante la Edad Media, el conocimiento de las plantas medicinales fue preservado y desarrollado en monasterios y en la alquimia. </p>
+                <div class="d-flex flex-column flex-md-row mx-3 my-md-3 mx-md-5 align-items-center">
+                    <img src="img/seccion-historia/contenido-herbolaria-4.jpg" alt="imagen de herbolaria renacentista" class="img-contenido-historia mb-3">
+                        <ul class="tx-contenido-oscuro mx-md-2">
+                            <li>Los monjes crearon huertos medicinales con lavanda, salvia y romero.</li>
+                            <li>La alquimia mezcló ciencia y misticismo en la búsqueda de elixires curativos.</li>
+                            <li>En la era del Renacimiento, el estudio de las plantas se formalizó, con botánicos como Paracelso, quien afirmaba que "la naturaleza tiene un remedio para cada enfermedad".</li>
+                        </ul>
+                </div>
+                <h4 class="titulo-oscuro text-center px-lg-4 pt-4 pt-md-2">Medicinas tradicionales y el conocimiento indígena</h4>
+                <p class="tx-contenido-oscuro px-3 px-md-5 mb-lg-0">Más allá de Europa, los pueblos originarios han utilizado hierbas medicinales durante siglos:</p>
+                <div class="d-flex flex-column flex-md-row mx-3 my-md-3 mx-md-5 align-items-center">
+                    <img src="img/seccion-historia/contenido-herbolaria-5.jpg" alt="imagen de herbolaria indigena" class="img-contenido-historia mb-3">
+                        <ul class="tx-contenido-oscuro mx-md-2">
+                            <li>En América, la manzanilla y el tabaco eran sagrados para los pueblos indígenas, usados en curaciones chamánicas.</li>
+                            <li>En la Amazonia, el uso de la ayahuasca se ha mantenido como una práctica ancestral.</li>
+                            <li>En la medicina tradicional africana, el baobab y la corteza de ciertos árboles han sido esenciales para la sanación.</li>
+                        </ul>
+                </div>
+                <p class="tx-contenido-oscuro px-5">Hoy en día, este conocimiento sigue vivo y ha influenciado la herbolaria moderna y la fitoterapia.</p>
+            </section>
+            <!-- A CRISTALES -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center mb-4">
+                <img src="img/seccion-historia/portada-cristales-historia.jpg" alt="imagen de piedras preciosas usadas en egipto" class="portada-horizontal img-historia">
+                <div class="d-flex flex-column">   
+                    <h3 class="titulo-oscuro text-center px-lg-4 pt-4 pt-md-2"> Cristales Energéticos: Sabiduría y Misticismo</h3>
+                    <h4 class="titulo-oscuro text-center px-lg-4 pt-4 pt-md-2">Orígenes y primeras civilizaciones</h4>
+                    <p class="tx-contenido-oscuro px-3 px-md-5 mb-lg-0">Los cristales han sido usados como amuletos de protección, herramientas de sanación y objetos de culto en diferentes culturas.</p>
+                </div>
+                <div class="d-flex flex-column flex-md-row mx-3 my-md-3 mx-md-5 align-items-center">
+                    <img src="img/seccion-historia/contenido-cristales-1.jpg" alt="piedras usadas en egipto" class="img-contenido-historia mb-3">
+                    <div>
+                        <h5 class="titulo-oscuro mx-md-2">Egipto y Mesopotamia</h5>
+                        <ul class="tx-contenido-oscuro mx-md-2">
+                            <li>El lapislázuli simbolizaba el poder divino y era colocado en tumbas reales.</li>
+                            <li>La malaquita era utilizada como pigmento y piedra de protección.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row mx-3 my-md-3 mx-md-5 align-items-center">
+                    <img src="img/seccion-historia/contenido-cristales-2.jpg" alt="imagen de joyeria en grecia y roma" class="img-contenido-historia mb-3">
+                    <div>
+                        <h5 class="titulo-oscuro mx-md-2">Grecia y Roma</h5>
+                        <ul class="tx-contenido-oscuro mx-md-2">
+                            <li>Los griegos creían que el amatista protegía contra la embriaguez y otorgaba claridad mental.</li>
+                            <li>Los soldados romanos llevaban hematita para darles fuerza en la batalla.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 class="titulo-oscuro text-center px-lg-4 pt-4 pt-md-2">Cristales en la espiritualidad oriental</h4>
+                <p class="tx-contenido-oscuro px-3 px-md-5 mb-lg-0">En el hinduismo y budismo, los cristales se han vinculado con la energía del cuerpo y los chakras.</p>
+                <div class="d-flex flex-column flex-md-row mx-3 my-md-3 mx-md-5 align-items-center">
+                    <img src="img/seccion-historia/contenido-cristales-3.jpg" alt="imagen de cristales y espiritualidad hindu" class="img-contenido-historia mb-3">
+                        <ul class="tx-contenido-oscuro mx-md-2">
+                            <li>Cuarzo rosa para el amor y la compasión.</li>
+                            <li>Turquesa como piedra de protección.</li>
+                            <li>Ojo de tigre para la confianza y el equilibrio emocional.</li>
+                        </ul>
+                </div>
+                <h4 class="titulo-oscuro text-center px-lg-4 pt-4 pt-md-2">La Edad Media y la alquimia</h4>
+                <p class="tx-contenido-oscuro px-3 px-md-5 mb-lg-0">En la alquimia medieval, los cristales eran vistos como herramientas de transformación. Se creía que algunas piedras tenían el poder de:</p>
+                <div class="d-flex flex-column flex-md-row mx-3 my-md-3 mx-md-5 align-items-center">
+                    <img src="img/seccion-historia/contenido-cristales-4.jpg" alt="imagen de cristales y espiritualidad hindu" class="img-contenido-historia mb-3">
+                        <ul class="tx-contenido-oscuro mx-md-2">
+                            <li>Potenciar la salud y la vitalidad.</li>
+                            <li>Servir como talismanes de protección contra el mal.</li>
+                            <li>Atraer riqueza y prosperidad.</li>
+                        </ul>
+                </div>
+            </section>
+            <!-- MODERNIDAD -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center mb-4">
+                <img src="img/seccion-historia/portada-modernidad-historia.jpg" alt="imagen de piedras preciosas usadas en egipto" class="portada-horizontal img-historia">
+                <div class="d-flex flex-column">   
+                    <h3 class="titulo-oscuro text-center px-lg-4 pt-4 pt-md-2"> Uso moderno de hierbas y cristales</h3>
+                    <p class="tx-contenido-oscuro px-3 px-md-5 ">En la actualidad, las hierbas medicinales y los cristales han experimentado un resurgimiento en la medicina alternativa y la espiritualidad.</p>
+                    <ul class="tx-contenido-oscuro mx-3 mx-md-5">
+                        <li>Las infusiones herbales y la aromaterapia se han integrado en la vida diaria.</li>
+                        <li>Los cristales son usados en prácticas como el Reiki, la meditación y la sanación energética.</li>
+                        <li>La combinación de ambos se ha vuelto común en rituales de limpieza energética y bienestar holístico.</li>
+                    </ul>
+                    <p class="tx-contenido-oscuro px-3 px-md-5 ">A lo largo de la historia, las hierbas y cristales han sido más que simples elementos naturales: han sido herramientas de sanación, símbolos de poder y fuentes de sabiduría ancestral.</p>
+                    <p class="tx-contenido-oscuro px-3 px-md-5 ">Hoy, la ciencia y la espiritualidad han comenzado a reencontrarse, redescubriendo el valor de estos regalos de la naturaleza. Explorar su historia es también explorar nuestra propia conexión con el mundo natural y con la energía que nos rodea.</p>
+                </div>
+            </section>
         </main>
+        <!-- FOOTER -->
         <footer>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom p-0">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
                 <div class="container-fluid d-flex fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo-footer d-flex align-items-center py-2" href="index.html">
                         <img src="img/elementos/logo.png" alt="logo de elixiria">
                     </a>
+                    <!-- PAGINAS COMPLEMENTARIAS -->
                     <ul class="navbar-nav d-flex flex-row">
                         <li class="nav-item pe-1">
                             <a class="nav-link texto-resaltado" href="contacto.html">Contacto</a>
@@ -73,6 +207,7 @@
         </footer>
 
     </div>
+    <!-- LINK A BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous">
