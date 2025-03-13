@@ -267,6 +267,13 @@ footer{
     height: 90px;
 }
 
+/* RECETAS */
+.img-recetas{
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.50);
+    height: 100%;
+}
+
 /* RESPONSIVE */
 /* MEDIA QUERIES PARA TAMAÑO LAPTOP */
 @media (min-width: 992px) {

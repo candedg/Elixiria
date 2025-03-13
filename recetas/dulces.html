@@ -16,25 +16,28 @@
 </head>
 <body class="fondo-color-ppal columna textura">
     <!-- CONTENEDOR PRINCIPAL -->
-    <div class="contenedor-pricipal container-fluid p-0">
+    <div class="contenedor-pricipal container-fluid p-0 columna">
         <!-- HEADER -->
-        <header>
+        <header class="columna">
+            <!-- NAVEGACIÓN -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-0">
                 <div class="container-fluid d-flex flex-row-reverse fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo d-flex align-items-center py-2 m-0" href="../index.html">
                         <img src="../img/elementos/logo.png" alt="logo de elixiria">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- MENU DESPLEGABLE  -->
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ">
-                            <li class="nav-item dropdown ">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle subtitulo" data-bs-toggle="dropdown" href="../index.html" role="button" aria-expanded="false">Menú</a>
                                 <ul class="dropdown-menu  fondo-color-secundario">
                                     <li ><a class="dropdown-item texto-resaltado" href="../plantas/index.html">Plantas Medicinales</a></li>
                                     <li><a class="dropdown-item texto-resaltado" href="../cristales/index.html">Cristales Energéticos</a></li>
-                                    <li><a class="dropdown-item texto-resaltado" href="../recetas/index.html">Recetas de Cocina Mágica</a></li>
+                                    <li><a class="dropdown-item texto-resaltado" href="index.html">Recetas de Cocina Mágica</a></li>
                                     <li><a class="dropdown-item texto-resaltado" href="../historia.html">Historia</a></li>
                                 </ul>
                             </li>
@@ -48,18 +51,135 @@
                     </div>
                 </div>
             </nav>
-        </header>
-
-            
-        <main>
-            
+        </header> 
+        <main class="col-12 col-lg-9 pt-5 mt-md-5 container">
+            <!-- NAVEGACIÓN ENTRE SUB-SECCIONES -->
+            <div class="navegacion-subpaginas mt-3 pt-2 d-flex justify-content-center">
+                <a href="dulces.html" class="boton-nav texto-boton fondo-color-secundario px-3 py-2 m-2">DULCES</a>
+                <a href="saladas.html" class="boton-nav texto-boton fondo-oscuro-difuminado px-3 py-2 m-2">SALADAS</a>
+            </div>
+            <!-- RECETAS -->
+             <!-- GALLETAS LAVANDA -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center p-4 my-4">
+                <h3 class="titulo-oscuro px-lg-4 pt-4 pt-md-2">Galletas de Lavanda</h3>
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="px-3">
+                            <p class="tx-contenido-oscuro">Instrucciones:</p>
+                            <ol class="tx-contenido-oscuro">
+                                <li>Precalienta el horno a 180 °C.</li>
+                                <li>En un bol, bate 150gr de manteca con 100gr de azúcar hasta obtener una mezcla cremosa.</li>
+                                <li>Agrega un huevo y una cdta. de esencia de vainilla, y mezcla bien.</li>
+                                <li>Incorpora 250gr de harina tamizada y 1 cda. flores de lavanda, mezclando hasta formar una masa suave.</li>
+                                <li>Estira la masa sobre una superficie enharinada hasta un grosor de 0,5 cm y corta las galletas con la forma que prefieras.</li>
+                                <li>Coloca las galletas en una bandeja con papel manteca y hornea durante 10-12 minutos o hasta que los bordes estén dorados.</li>
+                                <li>Deja enfriar y disfruta.</li>
+                            </ol>
+                        </div>
+                        <img src="img/dulces/recetas-galletas.jpg" alt="galletas de lavanda" class="col-12 col-md-4 img-recetas">
+                    </div>
+                    <p class="tx-contenido-oscuro px-4 pt-3 text-center">La lavanda tiene propiedades relajantes, por lo que estas galletas son perfectas para acompañar una tarde tranquila o regalar un momento de calma.</p>
+            </section>
+            <!-- MUFFINS LIMON -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center p-4 mb-4">
+                <h3 class="titulo-oscuro px-lg-4 pt-4 pt-md-2">Muffins de Salvia y Limón</h3>
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="px-3">
+                            <p class="tx-contenido-oscuro">Instrucciones:</p>
+                            <ol class="tx-contenido-oscuro">
+                                <li>Precalienta el horno a 180°C y engrasa o coloca los moldes de papel para los muffins.</li>
+                                <li>En un bol grande, mezcla 1 1/2 tazas de harina, 1/2 taza de azúcar, 1 cdta. polvo de hornear, 1/2 cdta. de bicarbonato de sodio y 1/4 cdta. de sal.</li>
+                                <li>En otro bol, bate un huevo con 1/4 taza de aceite, 1/2 taza de leche, el jugo y la ralladura de 1 limón.</li>
+                                <li>Incorpora 2 cucharadas de hojas de salvia fresca picada finamente (o 1 cucharadita de salvia seca) a la mezcla húmeda.</li>
+                                <li>Vierte los ingredientes húmedos en los secos y mezcla con suavidad hasta que se integren. No sobre mezcles.</li>
+                                <li>Vierte la mezcla en los moldes para muffins y hornea durante 18-20 minutos, o hasta que al insertar un palillo, este salga limpio.</li>
+                                <li>Deja enfriar los muffins en una rejilla antes de disfrutar.</li>
+                            </ol>
+                        </div>
+                        <img src="img/dulces/recetas-muffins.jpg" alt="muffins de limon y salvia" class="col-12 col-md-4 img-recetas">
+                    </div>
+                    <p class="tx-contenido-oscuro px-4 pt-3 text-center">La salvia es conocida por sus propiedades antiinflamatorias y digestivas, ayudando a mejorar la función intestinal. Espiritualmente, se asocia con la purificación y el fortalecimiento personal. El limón le da un toque fresco y revitalizante, además de sus propiedades antioxidantes. Esta receta es perfecta para disfrutar de un postre saludable, espiritual y reconfortante.</p>
+            </section>
+            <!-- TRUFAS CACAO -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center p-4 mb-4">
+                <h3 class="titulo-oscuro px-lg-4 pt-4 pt-md-2">Trufas de Cacao y Menta</h3>
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="px-3">
+                            <p class="tx-contenido-oscuro">Instrucciones:</p>
+                            <ol class="tx-contenido-oscuro">
+                                <li>Calienta 100ml de crema a fuego medio (sin que hierva). Agrega 2 cdas. de hojas de menta fresca (o 1 cdita. de menta seca),
+                                    1 cda. de miel (opcional), tapa y deja reposar durante 10 minutos para extraer su sabor y propiedades refrescantes. Cuela para retirar las hojas.</li>
+                                <li>Pica 200gr de chocolate en trozos pequeños y viértelo en la crema caliente. Remueve hasta que se derrita completamente y obtengas una mezcla suave y brillante. Si deseas un toque más dulce, añade miel.</li>
+                                <li>Deja reposar la mezcla en el refrigerador por al menos 2 horas, o hasta que esté firme.</li>
+                                <li>Con una cucharita, toma porciones de la mezcla y forma bolitas con las manos.</li>
+                                <li>Pasa las trufas por cacao en polvo para cubrirlas.</li>
+                            </ol>
+                        </div>
+                        <img src="img/dulces/recetas-trufas.jpg" alt="trufas de chocolate" class="col-12 col-md-4 img-recetas">
+                    </div>
+                    <p class="tx-contenido-oscuro px-4 pt-3 text-center">La menta ayuda a aliviar el estrés, mejora la digestión y se asocia con la claridad mental y la renovación energética. El cacao es considerado un "alimento del corazón," asociado con la apertura emocional, el amor propio y la energía revitalizante. Disfrútalas como un ritual dulce para calmar la mente y el cuerpo.</p>
+            </section>
+            <!-- TÉ DE MANZANILLA -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center p-4 mb-4">
+                <h3 class="titulo-oscuro px-lg-4 pt-4 pt-md-2">Té de Manzanilla</h3>
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="px-3">
+                            <p class="tx-contenido-oscuro">Instrucciones:</p>
+                            <ol class="tx-contenido-oscuro">
+                                <li>Para la cantidad de tazas que quieras preparar, calienta agua hasta que comience a hervir.</li>
+                                <li>Añade 1 cucharada, por cada taza de agua utilizada, de flores de manzanilla al agua caliente.</li>
+                                <li>Cubre y deja reposar durante 5-10 minutos.</li>
+                                <li>Cuela el té y agrega miel al gusto si lo deseas.</li>
+                                <li>Disfruta mientras te relajas.</li>
+                            </ol>
+                        </div>
+                        <img src="img/dulces/recetas-te.jpg" alt="te de manzanilla" class="col-12 col-md-4 img-recetas">
+                    </div>
+                    <p class="tx-contenido-oscuro px-4 pt-3 text-center">La manzanilla es ideal para aliviar el estrés, mejorar la digestión y promover el sueño. Es una receta perfecta para incorporar en tu rutina diaria.</p>
+            </section>
+            <!-- COMPOTA DE MANZANA -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center p-4 mb-4">
+                <h3 class="titulo-oscuro px-lg-4 pt-4 pt-md-2">Compota de Manzana y Canela</h3>
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="px-3">
+                            <p class="tx-contenido-oscuro">Instrucciones:</p>
+                            <ol class="tx-contenido-oscuro">
+                                <li>Lava y pela 4 manzanas. Luego córtalas en trozos pequeños o en rodajas finas según prefieras.</li>
+                                <li>En una cacerola, coloca las manzanas junto con 1/2 taza de agua, una ramita de canela y el jugo de 1/2 limón. Cocina a fuego medio-bajo durante unos 15-20 minutos, removiendo ocasionalmente, hasta que las manzanas estén blandas y jugosas.</li>
+                                <li>Si deseas un toque más dulce, agrega miel o azúcar al gusto y remueve bien.</li>
+                                <li>Retira la ramita de canela y sirve la compota tibia o fría, como postre o acompañante. Puedes agregar un poco de nuez rallada o un toque de crema batida si prefieres una textura más cremosa.</li>
+                            </ol>
+                        </div>
+                        <img src="img/dulces/recetas-compota.jpg" alt="compota de manzana con canela" class="col-12 col-md-4 img-recetas">
+                    </div>
+                    <p class="tx-contenido-oscuro px-4 pt-3 text-center">La canela tiene propiedades antiinflamatorias, mejora la digestión y regula el azúcar en la sangre. Espiritualmente, se asocia con la protección, la prosperidad y la energía positiva. Combinarla con la manzana, un símbolo de salud y abundancia, crea una receta reconfortante y terapéutica.</p>
+            </section>
+            <!-- LIMONADA CON ALBAHACA -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center p-4 mb-4">
+                <h3 class="titulo-oscuro px-lg-4 pt-4 pt-md-2">Limonada con Albahaca y Miel</h3>
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="px-3">
+                            <p class="tx-contenido-oscuro">Instrucciones:</p>
+                            <ol class="tx-contenido-oscuro">
+                                <li>Lava bien 5-6 hojas de albahaca fresca y machácalas ligeramente con un mortero o entre tus manos para liberar su aroma.</li>
+                                <li>En una jarra, combina el jugo de 3 limones, 500ml de agua fría y 3 cdas. de miel. Remueve bien hasta que la miel se disuelva por completo.</li>
+                                <li>Agrega las hojas de albahaca y deja reposar en la nevera durante 15-20 minutos para que infusionen el sabor.</li>
+                                <li>Cuela la limonada si prefieres una textura más limpia, agrega hielo si lo deseas y decora con una hoja de albahaca extra.</li>
+                            </ol>
+                        </div>
+                        <img src="img/dulces/recetas-limonada.jpg" alt="limonada con albahaca" class="col-12 col-md-4 img-recetas">
+                    </div>
+                    <p class="tx-contenido-oscuro px-4 pt-3 text-center">La albahaca tiene propiedades calmantes que ayudan a aliviar el estrés y equilibrar las emociones, mientras que el limón purifica el cuerpo y eleva el ánimo.</p>
+            </section>
         </main>
+        <!-- FOOTER -->
         <footer>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom p-0">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
                 <div class="container-fluid d-flex fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo-footer d-flex align-items-center py-2" href="../index.html">
                         <img src="../img/elementos/logo.png" alt="logo de elixiria">
                     </a>
+                    <!-- PAGINAS COMPLEMENTARIAS -->
                     <ul class="navbar-nav d-flex flex-row">
                         <li class="nav-item pe-1">
                             <a class="nav-link texto-resaltado" href="../contacto.html">Contacto</a>
@@ -71,8 +191,8 @@
                 </div>
             </nav>
         </footer>
-
     </div>
+    <!-- LINK A BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous">
