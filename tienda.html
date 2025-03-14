@@ -16,20 +16,23 @@
 </head>
 <body class="fondo-color-ppal columna textura">
     <!-- CONTENEDOR PRINCIPAL -->
-    <div class="contenedor-pricipal container-fluid p-0">
+    <div class="contenedor-pricipal container-fluid p-0 columna">
         <!-- HEADER -->
-        <header>
+        <header class="columna">
+            <!-- NAVEGACIÓN -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-0">
                 <div class="container-fluid d-flex flex-row-reverse fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo d-flex align-items-center py-2 m-0" href="index.html">
                         <img src="img/elementos/logo.png" alt="logo de elixiria">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- MENU DESPLEGABLE  -->
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ">
-                            <li class="nav-item dropdown ">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle subtitulo" data-bs-toggle="dropdown" href="index.html" role="button" aria-expanded="false">Menú</a>
                                 <ul class="dropdown-menu  fondo-color-secundario">
                                     <li ><a class="dropdown-item texto-resaltado" href="./plantas/index.html">Plantas Medicinales</a></li>
@@ -48,18 +51,384 @@
                     </div>
                 </div>
             </nav>
-        </header>
-
-            
-        <main>
-            
+        </header>            
+        <!-- SECCIONES INFO -->
+        <main class="col-12 col-lg-9 pt-5 mt-md-5">
+            <!-- FILTROS DE BUSQUEDA -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle my-4 mx-4 fondo-color-acento tx-contenido-oscuro" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Filtros de búsqueda
+                </button>
+                <ul class="dropdown-menu fondo-color-acento tx-contenido-oscuro">
+                    <li><a class="dropdown-item" href="#">Hierbas</a></li>
+                    <li><a class="dropdown-item" href="#">Cristales</a></li>
+                    <li><a class="dropdown-item" href="#">Velas</a></li>
+                    <li><a class="dropdown-item" href="#">Aceites</a></li>
+                </ul>
+            </div>
+            <!-- CARDS -->
+             <section class="container-fluid row justify-content-center p-0 m-0" >
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/aceites/aceite-calendula.jpg" class="card-img-top" alt="aceite de calendula">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Caléndula Aceite Escencial</h5>
+                      <p class="card-text text-truncate">30ml. Aceite escencial calmante y regenerador.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$11200</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/cristales/amatista.jpg" class="card-img-top" alt="amatistas en bruto">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Amatista</h5>
+                      <p class="card-text text-truncate">Piedra en bruto por unidad. Tamaño 5cm x 5cm aprox.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$800</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/hierbas/hibisco-deshidratado.jpg" class="card-img-top" alt="bolsa de hibisco deshidratado">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Hibisco Deshidratado</h5>
+                      <p class="card-text text-truncate">50g. Infusión rica en antioxidantes. Favorece la digestión.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$7400</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/velas/vela-abundancia-2.jpg" class="card-img-top" alt="vela con hierbas">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Vela Abundancia</h5>
+                      <p class="card-text text-truncate">Cera de abeja y hierbas naturales.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$2800</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/cristales/aventurina.jpg" class="card-img-top" alt="aventurina en bruto">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Aventurina en Bruto</h5>
+                      <p class="card-text text-truncate">Cristal de aventurina en bruto por unidad. Tamaño 8cm x 6cm aprox.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$1150</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/hierbas/manzanilla-deshidratada.jpg" class="card-img-top" alt="bolsa de manzanilla deshhidratada">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Manzanilla Deshidratada</h5>
+                      <p class="card-text text-truncate">100gr. Digestiva y calmante.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$1600</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/velas/vela-curativa.jpg" class="card-img-top" alt="vela con hierbas">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Vela Curativa</h5>
+                      <p class="card-text text-truncate">Cera de soja con hierbas sanadoras y cristales.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$8200</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/aceites/aceite-eucalipto.jpg" class="card-img-top" alt="aceite de eucalipto">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Eucalipto Aceite Escencial</h5>
+                      <p class="card-text text-truncate">150ml. Aceite escencial de eucalipto.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$23400</p>
+                      </div>
+                    </div>
+                </div><div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/hierbas/mix-energetico.jpg" class="card-img-top" alt="bolsa con mix de hierbas">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Mix Energía</h5>
+                      <p class="card-text text-truncate">Té verde, menta, cascara de naranja. 40gr.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$1670</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/velas/vela-amor.jpg" class="card-img-top" alt="vela rosa">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Vela Amor</h5>
+                      <p class="card-text text-truncate">Vela aromatica atrae amor.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$6358</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/aceites/aceite-jazmin.jpg" class="card-img-top" alt="aceite de jazmin">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Jazmín Aceite Escencial</h5>
+                      <p class="card-text text-truncate">20ml Aceite escencial de jazmín.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$2300</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/cristales/cuarzo-rutilado.jpg" class="card-img-top" alt="cuarzo rutilado en bruto">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Cuarzo Rutilado</h5>
+                      <p class="card-text text-truncate">Cuarzo en bruto por unidad. Tamaño 6cm x 6cm aprox.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$670</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/velas/vela-abundancia.jpg" class="card-img-top" alt="vela con hierbas y cristales">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Vela Abundancia</h5>
+                      <p class="card-text text-truncate">Atrae el dinero y la prosperidad. Vestida con hierbas orgánicas.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$3460</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/aceites/aceite-lavanda.jpg" class="card-img-top" alt="aceite de lavanda">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Lavanda Aceite Escencial</h5>
+                      <p class="card-text text-truncate">Aceite escencial de lavanda por 20ml.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$1080</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/cristales/kit-amor.jpg" class="card-img-top" alt="kit de 3 cristales">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Kit Amor</h5>
+                      <p class="card-text text-truncate">Cristales para manifestar amor. Incluye 3 piedras.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$2500</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/hierbas/mix-relajacion.jpg" class="card-img-top" alt="frasco con mix de hierbas">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Mix Relajación</h5>
+                      <p class="card-text text-truncate">80gr. Mezcla de hierbas calmantes.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$1540</p>
+                      </div>
+                    </div>
+                </div><div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/aceites/aceite-menta.jpg" class="card-img-top" alt="aceite de menta">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Menta Aceite Escencial</h5>
+                      <p class="card-text text-truncate">50ml. Aceite escencial de menta.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$4000</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/cristales/kit-chakras.jpg" class="card-img-top" alt="kit 7 cristales">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Kit Chakras</h5>
+                      <p class="card-text text-truncate">7 cristales para alinear los chakras.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$8200</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/hierbas/romero-deshidratado.jpg" class="card-img-top" alt="romero deshidratado">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Romero Deshidratado</h5>
+                      <p class="card-text text-truncate">200gr. Hojas de romero deshidratadas.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$2570</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/velas/vela-energia.jpg" class="card-img-top" alt="vela energetica">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Vela Energía</h5>
+                      <p class="card-text text-truncate">Energiza el ambiente. Vela de soja natural.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$7800</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/cristales/kit-proteccion.jpg" class="card-img-top" alt="kit de cristales">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Kit Protección</h5>
+                      <p class="card-text text-truncate">4 cristales protectores, turmalina, amatista, cuarzo transparente y blanco.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$6500</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/hierbas/sahumo-abundancia.jpg" class="card-img-top" alt="mix de hierbas para sahumar">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Mix Abundancia</h5>
+                      <p class="card-text text-truncate">Mix de hierbas para sahumar ambientes y atraer abundancia.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$4900</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/velas/vela-lavanda.jpg" class="card-img-top" alt="vela con lavanda">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Vela de Lavanda</h5>
+                      <p class="card-text text-truncate">Vela aromatica con flores de lavanta. Cera de soja.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$5700</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/aceites/aceite-naranja.jpg" class="card-img-top" alt="aceite de naranja">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Naranja Aceite Escencial</h5>
+                      <p class="card-text text-truncate">20ml. Aceite escencial de naranja.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$2090</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/cristales/ojo-de-tigre.jpg" class="card-img-top" alt="ojo de tigre en bruto">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Ojo de Tigre</h5>
+                      <p class="card-text text-truncate">Cristales en bruto por unidad de ojo de tigre. Tamaño 5cm x 5cm aprox.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$970</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/hierbas/salvia-deshidratada.jpg" class="card-img-top" alt="salvia deshidratada">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Salvia Deshidratada</h5>
+                      <p class="card-text text-truncate">80gr. Hojas de salvia deshidratada.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$2320</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/velas/vela-proteccion.jpg" class="card-img-top" alt="vela de proteccion">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Vela protección</h5>
+                      <p class="card-text text-truncate">Con romero, lavanda y albahaca, vela de soja protectora.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$9600</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/aceites/aceite-oregano.jpg" class="card-img-top" alt="aceite de oregano">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Orégano Aceite Escencial</h5>
+                      <p class="card-text text-truncate">50ml. Aceite Escencial de orégano.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$4400</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/hierbas/tomillo-deshidratado.jpg" class="card-img-top" alt="sodalita pulida">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Tomillo Deshidratado</h5>
+                      <p class="card-text text-truncate">80gr. Hojas de tomillo deshidratadas.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$1100</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/velas/vela-purificacion.jpg" class="card-img-top" alt="tomillo deshidratado">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Velas Purificación</h5>
+                      <p class="card-text text-truncate">Set 2 velas de cera de abeja vestidas con hierbas purificantes.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$12300</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/aceites/aceite-romero.jpg" class="card-img-top" alt="vela con hierbas">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Romero Aceite Escencial</h5>
+                      <p class="card-text text-truncate">80ml. Aceite Escencial de romero.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$7000</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-5 col-md-4 px-0 fondo-color-acento">
+                    <img src="img/tienda/cristales/sodalita.jpg" class="card-img-top" alt="aceite de romero">
+                    <div class="card-body tx-contenido-oscuro">
+                      <h5 class="card-title text-truncate">Sodalita</h5>
+                      <p class="card-text text-truncate">Cristales pulidos por unidad piedra sodalita.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="btn fondo-color-secundario texto-resaltado m-0">Ver</p>
+                        <p class="m-0">$2030</p>
+                      </div>
+                    </div>
+                </div>
+             </section>
         </main>
+        <!-- FOOTER -->
         <footer>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom p-0">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
                 <div class="container-fluid d-flex fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo-footer d-flex align-items-center py-2" href="index.html">
                         <img src="img/elementos/logo.png" alt="logo de elixiria">
                     </a>
+                    <!-- PAGINAS COMPLEMENTARIAS -->
                     <ul class="navbar-nav d-flex flex-row">
                         <li class="nav-item pe-1">
                             <a class="nav-link texto-resaltado" href="contacto.html">Contacto</a>
@@ -73,6 +442,7 @@
         </footer>
 
     </div>
+    <!-- LINK A BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous">
