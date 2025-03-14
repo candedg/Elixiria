@@ -16,25 +16,28 @@
 </head>
 <body class="fondo-color-ppal columna textura">
     <!-- CONTENEDOR PRINCIPAL -->
-    <div class="contenedor-pricipal container-fluid p-0">
+    <div class="contenedor-pricipal container-fluid p-0 columna">
         <!-- HEADER -->
-        <header>
+        <header class="columna">
+            <!-- NAVEGACIÓN -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-0">
                 <div class="container-fluid d-flex flex-row-reverse fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo d-flex align-items-center py-2 m-0" href="../index.html">
                         <img src="../img/elementos/logo.png" alt="logo de elixiria">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- MENU DESPLEGABLE  -->
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ">
-                            <li class="nav-item dropdown ">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle subtitulo" data-bs-toggle="dropdown" href="../index.html" role="button" aria-expanded="false">Menú</a>
                                 <ul class="dropdown-menu  fondo-color-secundario">
                                     <li ><a class="dropdown-item texto-resaltado" href="../plantas/index.html">Plantas Medicinales</a></li>
                                     <li><a class="dropdown-item texto-resaltado" href="../cristales/index.html">Cristales Energéticos</a></li>
-                                    <li><a class="dropdown-item texto-resaltado" href="../recetas/index.html">Recetas de Cocina Mágica</a></li>
+                                    <li><a class="dropdown-item texto-resaltado" href="index.html">Recetas de Cocina Mágica</a></li>
                                     <li><a class="dropdown-item texto-resaltado" href="../historia.html">Historia</a></li>
                                 </ul>
                             </li>
@@ -48,18 +51,132 @@
                     </div>
                 </div>
             </nav>
-        </header>
-
-            
-        <main>
-            
+        </header> 
+        <main class="col-12 col-lg-9 pt-5 mt-md-5 container">
+            <!-- NAVEGACIÓN ENTRE SUB-SECCIONES -->
+            <div class="navegacion-subpaginas mt-3 pt-2 d-flex justify-content-center">
+                <a href="dulces.html" class="boton-nav texto-boton fondo-oscuro-difuminado px-3 py-2 m-2">DULCES</a>
+                <a href="saladas.html" class="boton-nav texto-boton fondo-color-secundario px-3 py-2 m-2">SALADAS</a>
+            </div>
+            <!-- RECETAS -->
+             <!-- PASTA PESTO -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center p-4 my-4">
+                <h3 class="titulo-oscuro px-lg-4 pt-4 pt-md-2">Pasta con Salsa de Albahaca y Ajo</h3>
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="px-3">
+                            <p class="tx-contenido-oscuro">Instrucciones:</p>
+                            <ol class="tx-contenido-oscuro">
+                                <li>Cocina 200gr de pasta a tu eleccion según las indicaciones del paquete.</li>
+                                <li>Mientras tanto, en una sartén con 3cdas. de aceite de oliva, sofríe 2 dientes de ajo picados hasta que esté dorado.</li>
+                                <li>Agrega 1 taza de hojas de albahaca fresca y cocina unos segundos para potenciar su aroma.</li>
+                                <li>Incorpora 250gr de harina tamizada y 1cda. flores de lavanda, mezclando hasta formar una masa suave.</li>
+                                <li>Retira del fuego y licúa con el jugo de medio limón, un poco de agua de cocción de la pasta, sal y pimienta.</li>
+                                <li>Mezcla la salsa con la pasta y sirve con queso rallado si lo deseas.</li>
+                            </ol>
+                        </div>
+                        <img src="img/saladas/recetas-pasta.jpg" alt="pasta con albahaca y ajo" class="col-12 col-md-4 img-recetas">
+                    </div>
+                    <p class="tx-contenido-oscuro px-4 pt-3 text-center">La albahaca es antiinflamatoria, digestiva y ayuda a reducir el estrés. El ajo fortalece el sistema inmunológico y mejora la circulación. Además, la albahaca es considerada una hierba de protección y purificación, mientras que el ajo aleja las energías negativas y brinda fortaleza espiritual.</p>
+            </section>
+            <!-- PAN TOMILLO -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center p-4 mb-4">
+                <h3 class="titulo-oscuro px-lg-4 pt-4 pt-md-2">Pan de Tomillo y Miel</h3>
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="px-3">
+                            <p class="tx-contenido-oscuro">Instrucciones:</p>
+                            <ol class="tx-contenido-oscuro">
+                                <li>Mezcla 250gr de harina, 1cdta. de sal y 1 sobre de levadura en un bol.</li>
+                                <li>Agrega 150ml de agua tibia, 1cda. de miel y 2cdas. aceite de oliva. Amasa hasta obtener una masa suave.</li>
+                                <li>Incorpora 1cda. de tomillo fresco o seco y sigue amasando.</li>
+                                <li>Deja reposar la masa en un bol cubierto con un paño húmedo por 1 hora o hasta que doble su tamaño.</li>
+                                <li>Forma un pan o pequeños bollos y colócalos en una bandeja con papel de horno.</li>
+                                <li>Hornea a 180°C durante 25-30 minutos o hasta que estén dorados.</li>
+                            </ol>
+                        </div>
+                        <img src="img/saladas/recetas-pan.jpg" alt="pan con tomillo" class="col-12 col-md-4 img-recetas">
+                    </div>
+                    <p class="tx-contenido-oscuro px-4 pt-3 text-center">El tomillo es antibacteriano, fortalece el sistema respiratorio y ayuda a la digestión. La miel tiene propiedades antioxidantes y refuerza el sistema inmunológico. Además, el tomillo es una hierba de purificación y protección, ideal para eliminar malas energías. La miel representa la dulzura y la abundancia en la vida.</p>
+            </section>
+            <!-- PAPAS AL HORNO -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center p-4 mb-4">
+                <h3 class="titulo-oscuro px-lg-4 pt-4 pt-md-2">Papas al Horno con Salvia y Limón</h3>
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="px-3">
+                            <p class="tx-contenido-oscuro">Instrucciones:</p>
+                            <ol class="tx-contenido-oscuro">
+                                <li>Lava y corta 4 papas medianas en gajos o cubos.</li>
+                                <li>En un bol, mezcla las papas con 2cdas. aceite de oliva, 1cda. de salvia fresa o seca, el jugo de 1/2 limón, sal y pimienta.</li>
+                                <li>Extiende las papas en una bandeja para horno.</li>
+                                <li>Hornea a 200°C durante 30-40 minutos, removiendo a mitad de cocción para que se doren parejo.</li> 
+                            </ol>
+                        </div>
+                        <img src="img/saladas/recetas-papas.jpg" alt="papas asadas" class="col-12 col-md-4 img-recetas">
+                    </div>
+                    <p class="tx-contenido-oscuro px-4 pt-3 text-center">La salvia mejora la digestión, ayuda a aliviar dolores menstruales y tiene propiedades antiinflamatorias. El limón es rico en vitamina C y refuerza el sistema inmunológico. Además la salvia es una hierba de limpieza energética y claridad mental, usada para eliminar malas vibraciones. El limón simboliza renovación y protección espiritual.</p>
+            </section>
+            <!-- SOPA DE TOMATE  -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center p-4 mb-4">
+                <h3 class="titulo-oscuro px-lg-4 pt-4 pt-md-2">Sopa de Tomate y Romero</h3>
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="px-3">
+                            <p class="tx-contenido-oscuro">Instrucciones:</p>
+                            <ol class="tx-contenido-oscuro">
+                                <li>Corta 4 tomates grandes en cubos y sofríelos en una olla con 1cdta. aceite de oliva junto con 2 dientes de ajo picados.</li>
+                                <li>Añade 500ml de caldo de verduras y 1 ramita de romero fresco. Cocina a fuego medio por 15 minutos.</li>
+                                <li>Retira el romero y licúa la sopa hasta obtener una textura suave.</li>
+                                <li>Regresa a la olla, ajusta la sal y pimienta, y sirve caliente.</li>
+                            </ol>
+                        </div>
+                        <img src="img/saladas/recetas-sopa.jpg" alt="sopa de tomate" class="col-12 col-md-4 img-recetas">
+                    </div>
+                    <p class="tx-contenido-oscuro px-4 pt-3 text-center">El romero mejora la memoria, la digestión y tiene propiedades antioxidantes. El tomate es rico en vitaminas y protege el corazón. Además, el romero es una hierba de protección y claridad mental, mientras que el tomate, asociado al sol, aporta energía y vitalidad.</p>
+            </section>
+            <!-- GARBANZOS  SALTEADOS -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center p-4 mb-4">
+                <h3 class="titulo-oscuro px-lg-4 pt-4 pt-md-2">Garbanzos Salteados con Cúrcuma y Tomillo</h3>
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="px-3">
+                            <p class="tx-contenido-oscuro">Instrucciones:</p>
+                            <ol class="tx-contenido-oscuro">
+                                <li>Calienta 1cda. de aceite en una sartén a fuego medio.</li>
+                                <li>Agrega 1 diente de ajo picado y sofríe hasta que esté dorado.</li>
+                                <li>Incorpora 1 taza de garbanzos cocidos (o enlatados y escurridos), 1/2cdita. de cúrcuma y 1cdta. de tomillo fresco o seco. Mezcla bien y saltea durante 5-7 minutos.</li>
+                                <li>Añade sal, pimienta y, si lo deseas, un toque de jugo de limón antes de servir</li>
+                            </ol>
+                        </div>
+                        <img src="img/saladas/recetas-garbanzos.jpg" alt="garbanzos salteados" class="col-12 col-md-4 img-recetas">
+                    </div>
+                    <p class="tx-contenido-oscuro px-4 pt-3 text-center">El tomillo fortalece el sistema respiratorio y tiene propiedades antibacterianas. La cúrcuma es un poderoso antiinflamatorio y antioxidante, ideal para la salud digestiva y articular. Además el tomillo se asocia con la protección y la claridad mental, mientras que la cúrcuma es usada para atraer prosperidad y purificar energías negativas.</p>
+            </section>
+            <!-- ENSALADA DE ESPINACA -->
+            <section class="f-c-a-transparente d-flex flex-column align-items-center p-4 mb-4">
+                <h3 class="titulo-oscuro px-lg-4 pt-4 pt-md-2">Ensalada de Espinaca con Menta y Limón</h3>
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="px-3">
+                            <p class="tx-contenido-oscuro">Instrucciones:</p>
+                            <ol class="tx-contenido-oscuro">
+                                <li>Lava bien 2 tazas de espinaca fresca y 1/2 taza de hojas de menta fresca, y coloca las hojas de espinaca en un bol grande.</li>
+                                <li>Añade 1 pepino cortado en rodajas, 1/4 de cebolla morada en rodajas finas y las hojas de menta.</li>
+                                <li>En un pequeño bol, mezcla el jugo de 1 limón, 2 cdas. de aceite de oliva, sal y pimienta a gusto.</li>
+                                <li>Vierte la vinagreta sobre la ensalada y mezcla bien.</li>
+                                <li>Si deseas, espolvorea con nueces o almendras para un toque crujiente.</li>
+                                <li>Sirve inmediatamente como un acompañamiento fresco o una comida ligera.</li>
+                            </ol>
+                        </div>
+                        <img src="img/saladas/recetas-ensalada.jpg" alt="ensalada de espinaca" class="col-12 col-md-4 img-recetas">
+                    </div>
+                    <p class="tx-contenido-oscuro px-4 pt-3 text-center">La menta es excelente para la digestión y ayuda a aliviar dolores de cabeza y tensiones. La espinaca es rica en hierro, lo que contribuye a la energía y vitalidad. Además la menta tiene propiedades refrescantes y revitalizantes, ayudando a purificar la mente y abrir la creatividad. La espinaca, asociada a la energía vital, favorece la conexión con el cuerpo y la energía terrenal.</p>
+            </section>
         </main>
+        <!-- FOOTER -->
         <footer>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom p-0">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
                 <div class="container-fluid d-flex fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo-footer d-flex align-items-center py-2" href="../index.html">
                         <img src="../img/elementos/logo.png" alt="logo de elixiria">
                     </a>
+                    <!-- PAGINAS COMPLEMENTARIAS -->
                     <ul class="navbar-nav d-flex flex-row">
                         <li class="nav-item pe-1">
                             <a class="nav-link texto-resaltado" href="../contacto.html">Contacto</a>
@@ -71,8 +188,8 @@
                 </div>
             </nav>
         </footer>
-
     </div>
+    <!-- LINK A BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous">
