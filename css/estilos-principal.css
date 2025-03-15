@@ -274,6 +274,34 @@ footer{
     height: 100%;
 }
 
+/* TIENDA */
+/* .card{
+    width: 18rem;
+} */
+.card-text, .card-body .btn{
+    font-size: 0.7rem;
+}
+.card-title{
+    font-size: 1rem;
+}
+
+/* JUEGO */
+.boton-dado{
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+.boton-opcion{
+    background-color: #CCB47F;
+    color: #2B2728;
+    border: #383B40;
+    width: auto;
+}
+
+.btn:hover{
+    background-color: #696969;
+}
+
 /* RESPONSIVE */
 /* MEDIA QUERIES PARA TAMAÑO LAPTOP */
 @media (min-width: 992px) {
@@ -346,5 +374,13 @@ footer{
     .img-historia{
         display: block;
     }
-
+    .card-text, .card-body .btn{
+        font-size: 1rem;
+    }
+    .card-title{
+        font-size: 1.2rem;
+    }
+    .card{
+        width: 20%;
+    }
 }
