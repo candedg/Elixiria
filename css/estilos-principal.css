@@ -363,6 +363,10 @@ form ::placeholder{
         transition: opacity 0.3s ease-in-out;
     }
 
+    .overlay-plantas .texto-contenido{
+        font-size: 0.65rem;
+    }
+
     .overlay p{
         color: #d6ccb7;
         font-size: 1.5rem;
@@ -396,5 +400,11 @@ form ::placeholder{
     }
     .card{
         width: 20%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .overlay-plantas .texto-contenido{
+        font-size: 1rem;
     }
 }
