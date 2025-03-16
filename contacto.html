@@ -16,20 +16,23 @@
 </head>
 <body class="fondo-color-ppal columna textura">
     <!-- CONTENEDOR PRINCIPAL -->
-    <div class="contenedor-pricipal container-fluid p-0">
+    <div class="contenedor-pricipal container-fluid p-0 columna fondo-oscuro-difuminado ">
         <!-- HEADER -->
-        <header>
+        <header class="columna mb-5">
+            <!-- NAVEGACIÓN -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-0">
                 <div class="container-fluid d-flex flex-row-reverse fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo d-flex align-items-center py-2 m-0" href="index.html">
                         <img src="img/elementos/logo.png" alt="logo de elixiria">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- MENU DESPLEGABLE  -->
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ">
-                            <li class="nav-item dropdown ">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle subtitulo" data-bs-toggle="dropdown" href="index.html" role="button" aria-expanded="false">Menú</a>
                                 <ul class="dropdown-menu  fondo-color-secundario">
                                     <li ><a class="dropdown-item texto-resaltado" href="./plantas/index.html">Plantas Medicinales</a></li>
@@ -48,18 +51,63 @@
                     </div>
                 </div>
             </nav>
-        </header>
+        </header>            
+        <!-- SECCIONES DEL JUEGO -->
+        <main class="col-12 col-lg-9 pt-5 mt-md-4 columna">
+            <h2 class="titulo text-center col-10 my-5">Contáctate con Elixira</h2>
+            <form class="row g-3 needs-validation col-12 col-md-8 mb-4" action="https://formsubmit.co/candedigenova@gmail.com" method="POST" novalidate>
+                <div class="row g-3">
+                    <div class="col">
+                        <input type="text" class="form-control" id="nombre-usuario" placeholder="Nombre" required >
+                        <div class="invalid-feedback"> Por favor ingresa tu nombre.</div>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="asunto-mensaje" placeholder="Asunto" required>
+                        <div class="invalid-feedback"> Por favor ingresa el asunto de tu mensaje</div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-12 mb-3">
+                        <input type="email" class="form-control" id="email-usuario" placeholder="ejemplo@mail.com" required>
+                        <div class="invalid-feedback"> Por favor ingresa una dirección de mail válida.</div>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="mensaje" rows="3" placeholder="Dejanos tu mensaje aquí" required></textarea>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="validationFormCheck1" checked>
+                        <label class="form-check-label texto-contenido" for="validationFormCheck1">
+                            Acepto recibir notificaciones sobre actualizaciones en este sitio.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="validationFormCheck2" required>
+                        <label class="form-check-label texto-contenido" for="validationFormCheck2">
+                            He leído y acepto las <a href="" class="texto-resaltado">políticas de seguridad</a>.
+                        </label>
+                        <div class="invalid-feedback">Debes aceptar las políticas de privacidad para continuar</div>
+                    </div>
+                </div>
+                <div id="liveAlertPlaceholder"></div>
+                <div class="col-12 text-center neue-93-dark">
+                    <button type="submit"
+                            class="btn boton-home texto-boton"
+                            id="liveAlertBtn">ENVIAR</button>
+                </div>
 
-            
-        <main>
-            
+            </form>
         </main>
-        <footer>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom p-0">
+        <!-- FOOTER -->
+        <footer class="mt-5">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
                 <div class="container-fluid d-flex fondo-color-secundario">
+                    <!-- LOGO -->
                     <a class="navbar-brand logo-footer d-flex align-items-center py-2" href="index.html">
                         <img src="img/elementos/logo.png" alt="logo de elixiria">
                     </a>
+                    <!-- PAGINAS COMPLEMENTARIAS -->
                     <ul class="navbar-nav d-flex flex-row">
                         <li class="nav-item pe-1">
                             <a class="nav-link texto-resaltado" href="contacto.html">Contacto</a>
@@ -71,8 +119,9 @@
                 </div>
             </nav>
         </footer>
-
     </div>
+    <script src="js/formulario.js"></script>
+    <!-- LINK A BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous">

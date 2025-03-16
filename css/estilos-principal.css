@@ -302,6 +302,20 @@ footer{
     background-color: #696969;
 }
 
+/* FORMULARIO */
+form ::placeholder{
+    font-family: "Mitr", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #2B2728;
+}
+.form-control{
+    background-color: #CCB47F;
+    border: none;
+    color: #2B2728;
+}
+
 /* RESPONSIVE */
 /* MEDIA QUERIES PARA TAMAÑO LAPTOP */
 @media (min-width: 992px) {
