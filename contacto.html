@@ -58,21 +58,21 @@
             <form class="row g-3 needs-validation col-12 col-md-8 mb-4" action="https://formsubmit.co/candedigenova@gmail.com" method="POST" novalidate>
                 <div class="row g-3">
                     <div class="col">
-                        <input type="text" class="form-control" id="nombre-usuario" placeholder="Nombre" required >
+                        <input type="text" name="nombre" class="form-control" id="nombre-usuario" placeholder="Nombre" required >
                         <div class="invalid-feedback"> Por favor ingresa tu nombre.</div>
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" id="asunto-mensaje" placeholder="Asunto" required>
+                        <input type="text" name="asunto" class="form-control" id="asunto-mensaje" placeholder="Asunto" required>
                         <div class="invalid-feedback"> Por favor ingresa el asunto de tu mensaje</div>
                     </div>
                 </div>
                 <div class="row g-3">
                     <div class="col-12 mb-3">
-                        <input type="email" class="form-control" id="email-usuario" placeholder="ejemplo@mail.com" required>
+                        <input type="email" name="email" class="form-control" id="email-usuario" placeholder="ejemplo@mail.com" required>
                         <div class="invalid-feedback"> Por favor ingresa una dirección de mail válida.</div>
                     </div>
                     <div class="mb-3">
-                        <textarea class="form-control" id="mensaje" rows="3" placeholder="Dejanos tu mensaje aquí" required></textarea>
+                        <textarea name="mensaje" class="form-control" id="mensaje" rows="3" placeholder="Dejanos tu mensaje aquí" required></textarea>
                     </div>
                 </div>
                 <div class="col-12">

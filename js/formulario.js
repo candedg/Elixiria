@@ -68,7 +68,6 @@
                 event.preventDefault();
                 event.stopPropagation();
             } else {
-                event.preventDefault(); // Detenemos la recarga para que se pueda ver la alerta
                 mostrarAlerta("El formulario fue enviado correctamente.", "success");
             }
 
